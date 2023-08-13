@@ -1,5 +1,6 @@
 .testimonials{
 	position: relative;
+	z-index: 10;
 	padding-bottom: 210px;
 	@include small-desktop{
 		padding-bottom: 100px;
@@ -45,6 +46,7 @@
 	}
 	&::after{
 		content: '';
+		z-index: -2;
 		right: 0;
 		top: 40%;
 		width: 221px;
