@@ -1,5 +1,6 @@
 .app{
 	position: relative;
+	z-index: 10;
 	padding-bottom: 200px;
 	@include tablet{
 		padding-bottom: 120px;

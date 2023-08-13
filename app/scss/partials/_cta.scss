@@ -67,8 +67,8 @@
 		}
 		@include for-desktop{
 			&:hover{
-				padding-right: 44px;
-				color: var(--color-gray);
+				padding-right: 40px;
+				color: var(--color-brown);
 			}
 		}
 		@include small-mobile{
