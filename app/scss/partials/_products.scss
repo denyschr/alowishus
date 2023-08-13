@@ -1,0 +1,223 @@
+.products{
+	position: relative;
+	padding-bottom: 200px;
+	@include tablet{
+		padding-bottom: 160px;
+	}
+	@include small-tablet{
+		padding-bottom: 100px;
+	}
+	@include small-mobile{
+		padding-bottom: 70px;
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		right: 0;
+		top: -15%;
+		width: 183px;
+		height: 313px;
+		background-image: url('../images/decor-2.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		filter: drop-shadow(-15px 50px 70px rgba(27, 27, 29, 0.10));
+		filter: blur(7.5px);
+		@include tablet{
+			top: -10%;
+		}
+		@include mobile{
+			top: -9%;
+			width: 150px;
+			height: 280px
+		}
+		@include small-mobile{
+			top: -6%;
+			width: 135px;
+			height: 240px
+		}
+	}
+	&__box{
+		max-width: 610px;
+		margin: 0 auto 178px;
+		@include small-desktop{
+			margin: 0 auto 145px;
+		}
+		@include small-tablet{
+			margin: 0 auto 120px;
+		}
+		@include small-mobile{
+			margin: 0 auto 100px;
+		}
+	}
+	&__title{
+		margin: 0 0 24px;
+		@include small-desktop{
+			margin: 0 0 18px;
+		}
+		@include small-mobile{
+			margin: 0 0 14px;
+		}
+	}
+	&__text{
+		margin: 0;
+	}
+	&__list{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 33px;
+		row-gap: 110px;
+		@include tablet{
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include small-tablet{
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	&__item:nth-child(3) .products-article__img{
+		transform: rotate(1deg);
+		&::before{
+			transform: translateX(-60%);
+			@include small-desktop{
+				transform: translateX(-50%);
+			}
+		}
+	}
+}
+
+.products-article{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	border-radius: 24px;
+	background: linear-gradient(135deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+	box-shadow: 0 20px 60px 0 rgba(163, 168, 178, 0.15);
+	&__top{
+		display: flex;
+		align-items: center;
+		margin-bottom: 24px;
+		padding-top: 20px;
+		padding-right: 30px;
+		@include small-desktop{
+			flex-direction: column;
+			align-items: start;
+			margin-bottom: 16px;
+			padding-left: 30px;
+		}
+		@include small-mobile{
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+	}
+	&__img{
+		position: relative;
+		width: 100%;
+		margin-top: -80px;
+		img{
+			position: relative;
+			z-index: 5;
+			@include small-desktop{
+				margin: 0 auto;
+			}
+			@include small-mobile{
+				width: 70%;
+			}
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			z-index: 4;
+			left: 50%;
+			bottom: -3%;
+			transform: translateX(-50%);
+			width: 140px;
+			height: 30px;
+			background: radial-gradient(59.26% 59.26% at 51.56% 50.00%, rgba(8, 11, 10, 0.62) 0%, rgba(255, 255, 255, 0.00) 100%);
+			opacity: 0.4;
+			filter: blur(5px);
+		}
+		@include small-desktop{
+			margin-bottom: 15px;
+		}
+	}
+	&__title{
+		@extend %jo-semibold;
+		margin: 0;
+		margin-left: 16px;
+		color: var(--color-shark);
+		font-size: 40px;
+		line-height: 1.1;
+		text-transform: capitalize;
+		@include small-desktop{
+			margin-left: 0;
+			font-size: 30px;
+		}
+		@include small-tablet{
+			font-size: 38px;
+		}
+		@include mobile{
+			font-size: 32px;
+		}
+		@include small-mobile{
+			font-size: 28px;
+		}
+	}
+	&__label{
+		@extend %jo-medium;
+		display: block;
+		margin-bottom: 8px;
+		color: var(--color-gray);
+		font-size: 20px;
+		line-height: 1.4;
+		@include small-desktop{
+			font-size: 18px;
+		}
+		@include small-tablet{
+			font-size: 20px;
+		}
+	}
+	&__body{
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		padding: 0 30px 35px;
+		@include small-mobile{
+			padding: 0 25px 30px;
+		}
+	}
+	&__text{
+		margin: 0 0 40px;
+		color: var(--color-gray);
+		font-size: 20px;
+		line-height: 1.4;
+		@include small-desktop{
+			margin: 0 0 25px;
+		}
+		@include small-mobile{
+			font-size: 18px;
+		}
+	}
+	&__bottom{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: auto;
+	}
+	&__price{
+		@extend %jo-medium;
+		color: var(--color-shark);
+		font-size: 30px;
+		@include small-desktop{
+			font-size: 24px;
+		}
+		@include small-tablet{
+			font-size: 28px;
+		}
+		@include mobile{
+			font-size: 24px;
+		}
+		@include small-mobile{
+			font-size: 20px;
+		}
+	}
+}

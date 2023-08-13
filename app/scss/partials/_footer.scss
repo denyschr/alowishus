@@ -1,0 +1,79 @@
+.footer{
+	background: rgb(245,245,245);
+	&__content{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 40px 0;
+		border-top: 1px solid rgba(27, 27, 29, 0.1);
+		@include tablet{
+			flex-direction: column;
+			justify-content: start;
+			padding: 25px 0;
+			row-gap: 15px;
+		}
+		@include mobile{
+			padding: 15px 0;
+			row-gap: 10px;
+		}
+	}
+	&__copy{
+		color: var(--color-gray);
+		font-size: 22px;
+		line-height: 1.36;
+		text-align: center;
+		span{
+			@extend %jo-medium;
+			color: var(--color-shark);
+		}
+		@include mobile{
+			font-size: 20px;
+		}
+		@include small-mobile{
+			font-size: 18px;
+		}
+	}
+	&__list{
+		display: flex;
+		gap: 12px;
+	}
+	&__item{
+		position: relative;
+		&:not(:last-child){
+			padding-right: 14px;
+		}
+		&:not(:last-child)::after{
+			content: '|';
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			color: var(--color-gray);
+			font-size: 22px;
+			@include mobile{
+				font-size: 20px;
+			}
+			@include small-mobile{
+				font-size: 18px;
+			}
+		}
+	}
+	&__link{
+		position: relative;
+		color: var(--color-gray);
+		font-size: 22px;
+		line-height: 1.36;
+		transition: color .2s linear;
+		@include for-desktop{
+			&:hover{
+				color: var(--color-shark);
+			}
+		}
+		@include mobile{
+			font-size: 20px;
+		}
+		@include small-mobile{
+			font-size: 18px;
+		}
+	}
+}

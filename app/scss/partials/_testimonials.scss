@@ -1,0 +1,238 @@
+.testimonials{
+	position: relative;
+	padding-bottom: 210px;
+	@include small-desktop{
+		padding-bottom: 100px;
+	}
+	@include small-tablet{
+		padding-bottom: 70px;
+	}
+	@include mobile{
+		padding-bottom: 40px;
+	}
+	@include small-mobile{
+		padding-bottom: 20px;
+	}
+	&::before, &::after{
+		content: '';
+		position: absolute;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	&::before{
+		left: 0;
+		top: -50%;
+		width: 443px;
+		height: 670px;
+		background-image: url('../images/decor-4.png');
+		filter: blur(5px);
+		@include small-desktop{
+			top: -40%;
+			width: 330px;
+			height: 500px
+		}
+		@include tablet{
+			top: -20%;
+		}
+		@include mobile{
+			top: -10%;
+		}
+		@include small-mobile{
+			width: 260px;
+			height: 400px;
+		}
+	}
+	&::after{
+		content: '';
+		right: 0;
+		top: 40%;
+		width: 221px;
+		height: 540px;
+		background-image: url('../images/decor-5.png');
+		filter: drop-shadow(-35px 36px 100px rgba(107, 115, 123, 0.20));
+		@include small-desktop{
+			width: 165px;
+    	height: 400px
+		}
+		@include tablet{
+			top: 0;
+			width: 120px;
+			height: 300px;
+		}
+		@include small-tablet{
+			top: 5%;
+			width: 80px;
+			height: 200px;
+		}
+		@include mobile{
+			top: 10%;
+		}
+		@include small-mobile{
+			top: 15%;
+			width: 60px;
+			height: 150px
+		}
+	}
+	&__container{
+		display: flex;
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+		padding-right: max(15px, (100% - 1230px)/2);
+		@include tablet{
+			flex-direction: column-reverse;
+			max-width: var(--container-width);
+			margin: 0 auto;
+			padding: 0 var(--container-offset);
+		}
+	}
+	&__content{
+		max-width: 455px;
+		margin-left: 100px;
+		@include small-desktop{
+			margin-left: 50px;
+		}
+		@include tablet{
+			max-width: 90%;
+			margin-left: 0;
+			margin-bottom: 40px;
+		}
+	}
+	&__title{
+		margin: 0 0 40px;
+		@include small-desktop{
+			margin: 0 0 34px;
+		}
+		@include small-mobile{
+			margin: 0 0 25px;
+		}
+	}
+	&__slider{
+		width: calc(100% - 455px - 100px);
+		@include small-desktop{
+			width: calc(100% - 455px - 50px);
+		}
+		@include tablet{
+			width: 100%;
+		}
+	}
+	&__slide{
+		height: unset !important;
+		min-height: 100%;
+	}
+}
+
+.testimonials-item{
+	display: flex;
+	flex-direction: column;
+	max-width: 468px;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 16px;
+	background: linear-gradient(135deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+	&__img{
+		margin-bottom: 40px;
+		height: 100%;
+		@include tablet{
+			margin-bottom: 30px;
+		}
+		@include mobile{
+			margin-bottom: 20px;
+		}
+	}
+	&__content{
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		padding: 0 40px 40px;
+		@include tablet{
+			padding: 0 20px 40px;
+			text-align: center;
+		}
+		@include small-mobile{
+			padding: 0 20px 30px;
+		}
+	}
+	&__top{
+		display: flex;
+		align-items: center;
+		column-gap: 16px;
+		margin-bottom: 32px;
+		@include tablet{
+			flex-direction: column;
+			margin-bottom: 20px;
+			row-gap: 12px;
+		}
+		@include mobile{
+			margin-bottom: 15px;
+		}
+	}
+	&__title{
+		@extend %jo-semibold;
+		color: var(--color-shark);
+		font-size: 24px;
+		line-height: 1.25;
+		margin: 0;
+		@include mobile{
+			font-size: 22px;
+		}
+		@include small-mobile{
+			font-size: 20px;
+		}
+	}
+	&__text{
+		margin: 0;
+		margin-top: auto;
+		color: var(--color-shark);
+		font-size: 20px;
+		line-height: 1.5;
+		@include mobile{
+			font-size: 18px;
+		}
+		@include small-mobile{
+			font-size: 16px;
+		}
+	}
+}
+
+.testimonials-box{
+	display: flex;
+	align-items: center;
+	column-gap: 24px;
+	margin-bottom: 100px;
+	@include small-desktop{
+		margin-bottom: 50px;
+	}
+	@include small-tablet{
+		margin-bottom: 40px;
+	}
+	@include small-mobile{
+		margin-bottom: 30px;
+	}
+	&__estimation{
+		@extend %jo-semibold;
+		color: var(--color-shark);
+		font-size: 40px;
+		@include small-mobile{
+			font-size: 36px;
+		}
+	}
+	&__caption{
+		display: inline-block;
+		padding-top: 8px;
+		color: var(--color-gray);
+		font-size: 20px;
+		line-height: 1.4;
+		@include small-mobile{
+			font-size: 18px;
+		}
+	}
+}
+
+.testimonials-rating{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 2px;
+}

@@ -1,0 +1,150 @@
+.app{
+	position: relative;
+	padding-bottom: 200px;
+	@include tablet{
+		padding-bottom: 120px;
+	}
+	@include mobile{
+		padding-bottom: 60px;
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: -15%;
+		width: 171px;
+		height: 441px;
+		background-image: url('../images/decor-3.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		filter: drop-shadow(37px 98px 100px rgba(27, 27, 29, 0.10));
+		@include small-desktop{
+			top: -10%;
+			width: 110px;
+			height: 320px;
+		}
+		@include tablet{
+			top: 20%;
+		}
+		@include small-tablet{
+			top: 30%;
+		}
+		@include mobile{
+			top: 25%;
+			width: 85px;
+			height: 220px;
+		}
+		@include small-mobile{
+			top: 28%;
+			width: 70px;
+			height: 190px;
+		}
+	}
+	&__container{
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		padding-left: 39px;
+		@include tablet{
+			row-gap: 90px;
+			padding-left: 15px;
+		}
+		@include mobile{
+			row-gap: 65px;
+		}
+	}
+	&__content{
+		align-self: center;
+		grid-column: 5 span;
+		@include tablet{
+			grid-column: 2 / 12;
+		}
+		@include mobile{
+			grid-column: 12 span;
+		}
+	}
+	&__title{
+		margin: 0 0 30px;
+		@include small-desktop{
+			margin: 0 0 24px;
+		}
+		@include mobile{
+			margin: 0 0 16px;
+		}
+		@include small-mobile{
+			margin: 0 0 14px;
+		}
+	}
+	&__text{
+		margin: 0 0 60px;
+		@include small-desktop{
+			margin: 0 0 35px;
+		}
+		@include mobile{
+			margin: 0 0 20px;
+		}
+	}
+}
+
+.app-relative{
+	position: relative;
+	display: flex;
+	grid-column: 6 / 13;
+	@include big-desktop{
+		&::before{
+			content: '';
+			position: absolute;
+			left: 12%;
+			top: 50%;
+			transform: translateY(-50%) rotate(-30deg);
+			width: 648px;
+			height: 440px;
+			border-radius: 50%;
+			border: 2px solid var(--color-gray);
+			background-color: var(--color-white);
+		}
+	}
+	@include tablet{
+		grid-column: 10 span;
+		grid-row: 1;
+	}
+	@include small-tablet{
+		grid-column: 12 span;
+	}
+	&__img{
+		position: relative;
+		z-index: 5;
+		border-radius: 16px;
+		border: 8px solid var(--color-white);
+		box-shadow: -32px 33px 100px 0 rgba(166, 173, 181, 0.38);
+		overflow: hidden;
+		&:nth-child(1){
+			position: relative;
+			z-index: 4;
+			transform: translateX(190px) rotate(-15deg);
+			@include small-tablet{
+				transform: translateX(140px) rotate(-15deg);
+			}
+			@include mobile{
+				transform: translateX(100px) rotate(-15deg);
+			}
+			@include small-mobile{
+				transform: translateX(55px) rotate(-15deg);
+			}
+		}
+		&:nth-child(2){
+			transform: translateX(-30px);
+		}
+		@include tablet{
+			width: 80%;
+		}
+		@include small-tablet{
+			width: 100%;
+		}
+		img{
+			@include tablet{
+				width: 100%;
+			}
+		}
+	}
+}

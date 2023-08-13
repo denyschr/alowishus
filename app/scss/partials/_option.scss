@@ -1,0 +1,154 @@
+.option{
+	position: relative;
+	padding: 150px 0 190px;
+	@include tablet{
+		padding: 80px 0 50px;
+	}
+	@include mobile{
+		padding: 60px 0 35px;
+	}
+	@include small-mobile{
+		padding: 40px 0 35px;
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		z-index: 5;
+		left: 0;
+		top: 5%;
+		width: 268px;
+		height: 490px;
+		background-image: url('../images/decor-1.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		filter: drop-shadow(37px 98px 100px rgba(27, 27, 29, 0.15));
+		@include small-desktop{
+			top: 7%;
+			width: 200px;
+			height: 365px;
+		}
+		@include tablet{
+			top: 12%;
+			width: 140px;
+			height: 230px;
+		}
+		@include mobile{
+			width: 110px;
+			height: 210px;
+		}
+		@include small-mobile{
+			top: 14%;
+			width: 80px;
+			height: 150px;
+		}
+	}
+	&__box{
+		max-width: 710px;
+		margin: 0 auto 90px;
+		@include small-tablet{
+			max-width: 100%;
+			margin: 0 auto 60px;
+		}
+		@include mobile{
+			margin: 0 auto 40px;
+		}
+	}
+	&__title{
+		margin: 0 0 24px;
+		@include small-desktop{
+			margin: 0 0 18px;
+		}
+		@include small-mobile{
+			margin: 0 0 14px;
+		}
+	}
+	&__text{
+		max-width: 600px;
+		margin: 0 auto;
+		@include mobile{
+			max-width: 100%;
+		}
+	}
+	&__list{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+		@include tablet{
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include small-tablet{
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	&__item{
+		height: 100%;
+	}
+	&__item:nth-child(1) .option-card__text{
+		background-image: url('../images/svg/food.svg');
+	}
+	&__item:nth-child(2) .option-card__text{
+		background-image: url('../images/svg/fast-food.svg');
+	}
+	&__item:nth-child(3) .option-card__text{
+		background-image: url('../images/svg/ice-cream.svg');
+	}
+}
+
+.option-card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	padding: 40px;
+	border-radius: 24px;
+	background: linear-gradient(135deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+	box-shadow: 0 30px 60px 0 rgba(163, 168, 178, 0.15);
+	@include small-tablet{
+		text-align: center;
+	}
+	@include small-mobile{
+		padding: 25px;
+	}
+	&__title{
+		@extend %jo-semibold;
+		margin: 0 0 8px;
+		color: var(--color-shark);
+		font-size: 36px;
+		@include small-desktop{
+			font-size: 30px;
+		}
+		@include small-tablet{
+			font-size: 36px;
+		}
+		@include mobile{
+			font-size: 32px;
+		}
+		@include small-mobile{
+			font-size: 28px;
+		}
+	}
+	&__text{
+		margin: 0 0 60px;
+		padding-bottom: 210px;
+		background-repeat: no-repeat;
+		background-size: 150px 150px;
+		background-position: center bottom;
+		@include small-desktop{
+			padding-bottom: 170px;
+			background-size: 130px 130px;
+		}
+		@include small-tablet{
+			background-size: 150px 150px;
+		}
+		@include small-mobile{
+			padding-bottom: 150px;
+			background-size: 120px 120px;
+		}
+	}
+	&__button{
+		max-width: 230px;
+		width: 100%;
+		margin-top: auto;
+	}
+}

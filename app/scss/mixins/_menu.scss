@@ -1,0 +1,23 @@
+@mixin menu {
+	position: fixed;
+	z-index: 101;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// transform: translateX(100%);
+	clip-path: circle(50px at 90% -10%);
+	-webkit-clip-path: circle(50px at 90% -10%);
+	overflow: auto;
+	width: 100vw;
+	height: 100vh;
+	padding: var(--header-height-mobile) 50px 50px;
+	background: rgb(245,245,245);
+	// transition: transform .3s ease-in-out;
+	transition: all .5s ease-in-out;
+	&--active{
+		clip-path: circle(1500px at 90% -30%);
+		-webkit-clip-path: circle(1500px at 90% -30%);
+	}
+}

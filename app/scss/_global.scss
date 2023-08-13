@@ -1,0 +1,305 @@
+@import './mixins/breakpoint';
+@import './mixins/burger';
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+body {
+  @extend %jo-regular;
+  height: 100%;
+  overflow-x: hidden;
+  background: var(--color-athens);
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex-grow: 1;
+  margin-top: 223px;
+  background: rgb(245,245,245);
+  @include tablet{
+    margin-top: 210px;
+  }
+  @include small-tablet{
+    margin-top: 170px;
+  }
+  @include mobile{
+    margin-top: 110px;
+  }
+  @include small-mobile{
+    margin-top: 100px;
+  }
+}
+
+.noscroll {
+  overflow-y: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.burger {
+  display: none;
+  @include burger;
+  @include tablet{
+    display: block;
+  }
+}
+
+.button-main, .button-secondary{
+  @extend %jo-medium;
+  display: inline-block;
+  border: none;
+  border-radius: 126px;
+  background-color: var(--color-shark);
+  text-align: center;
+  color: var(--color-white);
+  font-size: 18px;
+  line-height: 1.66;
+  text-transform: uppercase;
+  transition: color .2s ease-in-out;
+  cursor: pointer;
+  @include for-desktop{
+    &:hover{
+     color: var(--color-yellow);
+    }
+  }
+  @include small-mobile{
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
+
+.button-main{
+  padding: 20px 40px;
+  @include mobile{
+    padding: 15px 30px;
+  }
+  @include small-mobile{
+    padding: 15px;
+  }
+}
+
+.button-secondary{
+  padding: 15px 30px;
+  @include small-desktop{
+    padding: 15px 20px;
+  }
+}
+
+.logo{
+  position: relative;
+  z-index: 102;
+  @include small-mobile{
+    width: 100px;
+    height: 40px;
+  }
+}
+
+.text-center{
+  text-align: center;
+}
+
+.title-small, .title-big{
+  @extend %jo-extrabold;
+  color: var(--color-shark);
+  text-transform: capitalize;
+}
+
+.title-big{
+  font-size: 64px;
+  line-height: 1.1;
+  @include small-desktop{
+    font-size: 54px;
+  }
+  @include small-tablet{
+    font-size: 48px;
+  }
+  @include mobile{
+    font-size: 38px;
+  }
+  @include small-mobile{
+    font-size: 34px;
+  }
+}
+
+.title-small{
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.25;
+  @include small-desktop{
+    font-size: 34px;
+  }
+  @include mobile{
+    font-size: 28px;
+  }
+  @include mobile{
+    font-size: 26px;
+  }
+}
+
+.text-small, .text-big{
+  color: var(--color-gray);
+}
+
+.text-small{
+  font-size: 24px;
+  line-height: 1.4;
+  @include small-desktop{
+    font-size: 22px;
+  }
+  @include mobile{
+    font-size: 20px;
+  }
+  @include small-mobile{
+    font-size: 18px;
+  }
+}
+
+.text-big{
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.33;
+  @include small-desktop{
+    font-size: 26px;
+  }
+  @include small-tablet{
+    font-size: 30px;
+  }
+  @include mobile{
+    font-size: 24px;
+  }
+  @include small-mobile{
+    font-size: 20px;
+  }
+}
+
+.slider-nav{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  @include mobile{
+    gap: 20px;
+  }
+  &__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--color-white);
+    color: #000;
+    filter: drop-shadow(0 12px 30px rgba(205, 209, 214, 0.28));
+    cursor: pointer;
+    transition: background .2s ease-in-out, color .2s ease-in-out;
+    svg{
+      width: 30px;
+      height: 30px;
+      stroke: currentColor;
+      stroke-width: 3px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      @include small-mobile{
+        width: 26px;
+        height: 26px;
+      }
+    }
+    @include for-desktop{
+      &:hover{
+        background-color: var(--color-gray);
+        color: var(--color-white);
+      }
+    }
+    @include small-mobile{
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.social{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  &__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--color-white);
+    color: var(--color-gray);
+    transition: background .2s ease-in-out, color .2s ease-in-out;
+    svg{
+      width: 30px;
+      height: 30px;
+      fill: currentColor;
+      @include mobile{
+        width: 26px;
+        height: 26px;
+      }
+    }
+    @include for-desktop{
+      &:hover{
+        background-color: var(--color-gray);
+        color: var(--color-white);
+      }
+    }
+    @include mobile{
+      width: 50px;
+      height: 50px;
+    }
+  }
+  @include mobile{
+    gap: 15px;
+  }
+}

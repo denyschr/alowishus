@@ -1,0 +1,81 @@
+.header{
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: var(--color-athens);
+	&__container{
+		display: flex;
+		align-items: center;
+		min-height: var(--header-height);
+		padding-top: 10px;
+		padding-bottom: 10px;
+		@include tablet{
+			justify-content: space-between;
+		}
+		@include small-mobile{
+			min-height: var(--header-height-mobile);
+		}
+	}
+	&__actions{
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		@include small-tablet{
+			gap: 15px;
+		}
+	}
+	&__cart{
+		position: relative;
+		width: 56px;
+		height: 56px;
+		padding: 0;
+		border: none;
+		border-radius: 28px;
+		background: var(--color-white);
+		filter: drop-shadow(0px 30px 60px rgba(163, 168, 178, 0.15));
+		transition: background .2s linear;
+		cursor: pointer;
+		&::before{
+			content: '';
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			width: 24px;
+			height: 24px;
+			background-image: url('../images/svg/cart.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			@include small-mobile{
+				width: 20px;
+				height: 20px;
+			}
+		}
+		@include for-desktop{
+			&:hover{
+				background: rgba(160, 165, 175, 0.71);
+			}
+		}
+		@include mobile{
+			width: 50px;
+			height: 50px;
+		}
+		@include small-mobile{
+			width: 40px;
+			height: 40px;
+		}
+	}
+	&__button{
+		padding: 15px 30px;
+		border-radius: 63px;
+		box-shadow: 0 30px 60px 0 rgba(163, 168, 178, 0.15);
+		font-size: 15px;
+		line-height: 1.73;
+		@include mobile{
+			display: none;
+		}
+	}
+}

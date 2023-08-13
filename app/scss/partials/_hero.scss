@@ -1,0 +1,243 @@
+.hero{
+	padding-bottom: 131px;
+	background-color: var(--color-athens);
+	@include tablet{
+		padding-bottom: 95px;
+	}
+	@include small-tablet{
+		padding-bottom: 60px;
+	}
+	@include mobile{
+		padding-bottom: 60px;
+	}
+	@include small-mobile{
+		padding-bottom: 35px;
+	}
+	&__container{
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		@include tablet{
+			row-gap: 35px;
+		}
+		@include small-tablet{
+			row-gap: 20px;
+		}
+	}
+	&__content{
+		grid-column: 6 span;
+		@include small-desktop{
+			grid-column: 5 span;
+		}
+		@include tablet{
+			grid-column: 2 / 12;
+		}
+		@include mobile{
+			grid-column: 12 span;
+		}
+	}
+	&__title{
+		@extend %jo-extrabold;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		margin: 0 0 30px;
+		color: var(--color-shark);
+		font-size: 124px;
+		line-height: 1.13;
+		text-transform: capitalize;
+		@include small-desktop{
+			font-size: 90px;
+		}
+		@include small-tablet{
+			font-size: 70px;
+		}
+		@include mobile{
+			margin: 0 0 20px;
+			font-size: 55px;
+		}
+		@include small-mobile{
+			font-size: 42px;
+		}
+	}
+	&__title-span{
+		&:last-child{
+			padding-right: 93px;
+			background-image: url('../images/svg/reward.svg');
+			background-repeat: no-repeat;
+			background-size: 73px 58px;
+			background-position: right 48px;
+			@include small-desktop{
+				background-position: right center;
+			}
+			@include mobile{
+				padding-right: 74px;
+				background-size: 62px 58px;
+			}
+			@include small-mobile{
+				padding-right: 64px;
+				background-size: 50px 58px;
+			}
+		}
+	}
+	&__text{
+		max-width: 530px;
+		margin: 0 0 60px;
+		@include small-desktop{
+			margin: 0 0 35px;
+		}
+		@include mobile{
+			max-width: 100%;
+			margin: 0 0 20px;
+		}
+	}
+	&__actions{
+		display: flex;
+		align-items: center;
+		gap: 30px;
+		@include mobile{
+			gap: 20px;
+		}
+		@include small-mobile{
+			gap: 15px;
+		}
+	}
+	&__link{
+		@extend %jo-medium;
+		border-bottom: 2px solid var(--color-shark);
+		color: var(--color-shark);
+		font-size: 18px;
+		text-transform: uppercase;
+		transition: padding .2s ease-in-out, color .2s ease-in-out;
+		@include for-desktop{
+			&:hover{
+				padding-bottom: 4px;
+				color: var(--color-gray);
+			}
+		}
+		@include small-mobile{
+			font-size: 16px;
+		}
+	}
+}
+
+.hero-relative{
+	position: relative;
+	grid-column: 6 span;
+	@include small-desktop{
+		grid-column: 7 / 13;
+	}
+	@include tablet{
+		grid-column: 12 span;
+		grid-row: 1;
+	}
+	&::after{
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 10px;
+		background-image: url('../images/svg/reward.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		width: 144px;
+		height: 113px;
+		@include small-desktop{
+			right: 5%;
+			width: 110px;
+			height: 86px;
+		}
+		@include tablet{
+			right: 12%;
+			width: 144px;
+			height: 113px;
+		}
+		@include small-tablet{
+			right: 10%;
+			top: 5%;
+			width: 100px;
+			height: 80px;
+		}
+		@include mobile{
+			right: 7%;
+			top: 2%;
+			width: 80px;
+			height: 64px;
+		}
+		@include small-mobile{
+			width: 60px;
+			height: 48px;
+		}
+	}
+	&__img{
+		@include tablet{
+			margin: 0 auto;
+		}
+	}
+	&__item{
+		position: absolute;
+		left: 0;
+		bottom: 175px;
+		max-width: 280px;
+		padding: 20px 24px;
+		border-radius: 24px;
+		background-color: var(--color-white);
+		@include tablet{
+			left: 15%;
+		}
+		@include small-tablet{
+			left: 5%;
+			bottom: 20%;
+			max-width: 260px;
+		}
+		@include mobile{
+			bottom: 14%;
+			max-width: 190px;
+			padding: 18px;
+		}
+		@include small-mobile{
+			bottom: 10%;
+			max-width: 160px;
+			padding: 16px;
+		}
+	}
+	&__rating{
+		display: flex;
+		align-items: center;
+		margin-bottom: 12px;
+		@include mobile{
+			margin-bottom: 10px;
+		}
+		@include small-mobile{
+			margin-bottom: 8px;
+		}
+	}
+	&__rating-item{
+		@include small-tablet{
+			width: 28px;
+			height: 28px;
+		}
+		@include mobile{
+			width: 24px;
+			height: 24px;
+		}
+		@include small-mobile{
+			width: 20px;
+			height: 20px;
+		}
+	}
+	&__text{
+		margin: 0;
+		color: var(--color-gray);
+		font-size: 19px;
+		line-height: 1.36;
+		@include small-tablet{
+			font-size: 16px;
+		}
+		@include mobile{
+			font-size: 12px;
+		}
+		@include small-mobile{
+			font-size: 10px;
+		}
+	}
+}

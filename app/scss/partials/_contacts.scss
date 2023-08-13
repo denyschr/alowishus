@@ -1,0 +1,94 @@
+.contacts{
+	padding-bottom: 90px;
+	@include small-desktop{
+		padding-bottom: 60px;
+	}
+	@include mobile{
+		padding-bottom: 50px;
+	}
+	@include small-mobile{
+		padding-bottom: 40px;
+	}
+	&__container{
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		@include small-tablet{
+			row-gap: 20px;
+		}
+		@include small-mobile{
+			row-gap: 10px;
+		}
+	}
+	&__item{
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: 30px;
+		&:nth-child(1){
+			grid-column: 5 span;
+			@include small-tablet{
+				grid-column: 12 span;
+			}
+		}
+		&:nth-child(2){
+			grid-column: 8 / 12;
+			padding-top: 20px;
+			@include tablet{
+				grid-column: 7 / 13;
+			}
+			@include small-tablet{
+				grid-column: 12 span;
+			}
+		}
+	}
+	&__text{
+		padding-top: 162px;
+		background-image: url('../images/svg/logo.svg');
+		background-repeat: no-repeat;
+		background-size: 307px 122px;
+		background-position: left top;
+		@include small-desktop{
+			padding-top: 110px;
+			background-size: 230px 90px;
+		}
+		@include tablet{
+			background-size: 190px 90px;
+		}
+		@include mobile{
+			padding-top: 90px;
+			background-size: 150px 90px;
+		}
+	}
+	&__link{
+		position: relative;
+		margin-bottom: 10px;
+		padding-left: 84px;
+		&::before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			width: 60px;
+			height: 60px;
+			filter: drop-shadow(0px 12px 30px rgba(205, 209, 214, 0.28));
+			@include mobile{
+				width: 48px;
+				height: 48px;
+			}
+		}
+		@include mobile{
+			margin-bottom: 0;
+			padding-left: 68px;
+		}
+	}
+	&-mail::before{
+		background-image: url('../images/svg/mail.svg');
+	}
+	&-phone::before{
+		background-image: url('../images/svg/call.svg');
+	}
+}

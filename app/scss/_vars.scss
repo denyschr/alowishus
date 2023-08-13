@@ -1,0 +1,35 @@
+%jo-regular{
+	font-family: 'Jost', sans-serif;
+	font-weight: 400;
+}
+
+%jo-medium{
+	font-family: 'Jost', sans-serif;
+	font-weight: 500;
+}
+
+%jo-semibold{
+	font-family: 'Jost', sans-serif;
+	font-weight: 600;
+}
+
+%jo-extrabold{
+	font-family: 'Jost', sans-serif;
+	font-weight: 800;
+}
+
+:root{
+		// Base
+		--content-width: 1240px;
+		--container-offset: 15px;
+		--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+		--header-height: 100px;
+		--header-height-mobile: 80px;
+	
+		// Colors
+		--color-white: #fff;
+		--color-shark: #1b1b1d;
+		--color-gray: #64646a;
+		--color-athens: #eeeff1;
+		--color-yellow: #ffff00;
+}
