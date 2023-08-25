@@ -3,6 +3,7 @@
 - HTML
 - CSS
 - SCSS
+- GULP
 - GSAP
 - Javascript
 ## Features:
