@@ -24,6 +24,7 @@
 	&::before{
 		left: 0;
 		top: -50%;
+		pointer-events: none;
 		width: 443px;
 		height: 670px;
 		background-image: url('../images/decor-4.png');
@@ -46,9 +47,9 @@
 	}
 	&::after{
 		content: '';
-		z-index: -2;
 		right: 0;
 		top: 40%;
+		pointer-events: none;
 		width: 221px;
 		height: 540px;
 		background-image: url('../images/decor-5.png');
