@@ -1,4 +1,4 @@
-# Minimalistic [Coffee Shop](https://dchornoivanenko.github.io/alowishus/) Landing Page
+# Minimalistic [Coffee Shop](https://denyschr.github.io/alowishus/) Landing Page
 ## What I used for creating this website:
 - HTML
 - CSS
