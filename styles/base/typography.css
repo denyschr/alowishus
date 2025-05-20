@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+.heading-1,
+.heading-2,
+.heading-3 {
+  color: var(--heading-primary-color);
+}
+
+h1,
+h2,
+.heading-1,
+.heading-2 {
+  font-weight: var(--font-weight-extra-bold);
+  line-height: 1.1;
+}
+
+h1,
+.heading-1 {
+  font-size: var(--text-size-7xl);
+}
+
+h2,
+.heading-2 {
+  font-size: var(--text-size-6xl);
+}
+
+h3,
+.heading-3 {
+  font-size: var(--text-size-5xl);
+  font-weight: var(--font-weight-semi-bold);
+}

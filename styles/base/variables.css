@@ -1,0 +1,55 @@
+:root {
+  --white: #ffffff;
+  --gray: #64646a;
+  --gray-dark: #1b1b1d;
+  --gray-dark-rgb: 27, 27, 29;
+  --gray-100: #eeeff1;
+  --gray-200: #f3f4f5;
+
+  --body-background-color: linear-gradient(
+    173deg,
+    var(--white) 0%,
+    var(--white) 0%,
+    rgba(243, 244, 245, 0.2) 11.74%,
+    var(--gray-200) 27.92%,
+    rgba(243, 244, 245, 0) 44.79%,
+    rgba(243, 244, 245, 0.68) 60.42%,
+    var(--gray-200) 79.17%,
+    var(--white) 100%
+  );
+  --body-text-color-primary: var(--gray-dark);
+  --body-text-color-secondary: var(--gray);
+
+  --heading-primary-color: var(--gray-dark);
+
+  --hero-background-color: var(--gray-100);
+
+  --button-primary-text-color: var(--white);
+  --button-primary-background-color: var(--gray-dark);
+  --button-primary-background-color-hover: rgba(var(--gray-dark-rgb), 0.9);
+
+  --font-family-base: "Jost", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-extra-bold: 800;
+
+  --text-size-base: 1rem;
+  --text-size-md: 1.125rem;
+  --text-size-lg: 1.25rem;
+  --text-size-xl: 1.375rem;
+  --text-size-2xl: 1.5rem;
+  --text-size-3xl: 1.875rem;
+  --text-size-4xl: 2.25rem;
+  --text-size-5xl: 2.5rem;
+  --text-size-6xl: 4rem;
+  --text-size-7xl: 7.75rem;
+
+  --border-radius-base: 1rem;
+  --border-radius-md: 1.5rem;
+  --border-radius-circle: 100vmax;
+
+  --shadow-lg: 0 1.875rem 3.75rem 0 rgba(163, 168, 178, 0.15);
+  --shadow-base: 0 1.25rem 3.75rem 0 rgba(163, 168, 178, 0.15);
+  --shadow-sm: 0 0.75rem 1.875rem 0 rgba(205, 209, 214, 0.28);
+}
