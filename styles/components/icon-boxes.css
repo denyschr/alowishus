@@ -1,0 +1,25 @@
+.icon-box {
+  display: inline-grid;
+  place-content: center;
+  flex-shrink: 0;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: var(--border-radius-circle);
+  background-color: var(--icon-box-background-color);
+  filter: drop-shadow(var(--icon-box-shadow));
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  @media (any-hover: hover) {
+    &:hover {
+      color: var(--icon-box-text-color-hover);
+      background-color: var(--icon-box-background-color-hover);
+    }
+  }
+}
+
+.icon-box-primary {
+  color: var(--icon-box-primary-text-color);
+}
+
+.icon-box-secondary {
+  color: var(--icon-box-secondary-text-color);
+}

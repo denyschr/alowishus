@@ -28,6 +28,15 @@
   --button-primary-background-color: var(--gray-dark);
   --button-primary-background-color-hover: rgba(var(--gray-dark-rgb), 0.9);
 
+  --icon-box-text-color-hover: var(--white);
+  --icon-box-background-color: var(--white);
+  --icon-box-background-color-hover: var(--gray);
+  --icon-shadow: var(--shadow-sm);
+  --icon-box-primary-text-color: var(--gray-dark);
+  --icon-box-secondary-text-color: var(--gray);
+
+  --toggle-menu-button-text-color: var(--gray-dark);
+
   --font-family-base: "Jost", sans-serif;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -49,7 +58,14 @@
   --border-radius-md: 1.5rem;
   --border-radius-circle: 100vmax;
 
-  --shadow-lg: 0 1.875rem 3.75rem 0 rgba(163, 168, 178, 0.15);
-  --shadow-base: 0 1.25rem 3.75rem 0 rgba(163, 168, 178, 0.15);
   --shadow-sm: 0 0.75rem 1.875rem 0 rgba(205, 209, 214, 0.28);
+  --shadow-base: 0 1.25rem 3.75rem 0 rgba(163, 168, 178, 0.15);
+  --shadow-lg: 0 1.875rem 3.75rem 0 rgba(163, 168, 178, 0.15);
+
+  --container-max-width: 77.5rem;
+  --container-padding-x: 1rem;
+
+  --site-header-height: 6.5rem;
+  --site-header-gap-x: clamp(1.5rem, 3vw, 2.5rem);
+  --site-header-menu-mobile-background-color: var(--gray-100);
 }

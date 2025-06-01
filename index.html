@@ -7,5 +7,51 @@
     <link rel="stylesheet" href="styles/main.css" />
     <script src="scripts/main.js" type="module"></script>
   </head>
-  <body></body>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="#">
+          <img
+            src="assets/images/site-logo-small.svg"
+            width="126"
+            height="50"
+            alt="Alowishus delicious"
+          />
+        </a>
+        <div class="menu" data-site-header-menu>
+          <nav id="nav-content">
+            <ul>
+              <li><a href="#">Cafe Menu</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Find Us</a></li>
+              <li><a href="#">Alowishus Catering</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="actions">
+          <button class="icon-box icon-box-primary" type="button">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="assets/icons/icons.svg#cart"></use>
+            </svg>
+          </button>
+          <a
+            class="button button-primary"
+            href="#"
+            data-move="[data-site-header-menu];61.99875em;last"
+            >Buy gift vouchers</a
+          >
+          <button
+            class="toggle-menu-button"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-controls="nav-content"
+            aria-expanded="false"
+            data-toggle-menu-button
+          >
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>

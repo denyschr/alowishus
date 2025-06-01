@@ -1,0 +1,31 @@
+@media (min-width: 62em) {
+  .toggle-menu-button {
+    display: none;
+  }
+}
+
+@media (max-width: 61.99875em) {
+  :root {
+    --site-header-height: 4.625rem;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.25rem;
+    position: fixed;
+    inset: var(--site-header-height) 0 0;
+    padding: 1rem 1rem 2rem;
+    translate: 100% 0;
+    overflow-y: auto;
+    border-block-start: 1px solid var(--gray-dark);
+    background-color: var(--site-header-menu-mobile-background-color);
+    transition: translate 0.2s ease-in-out;
+    nav ul {
+      flex-direction: column;
+      row-gap: 1.5rem;
+      font-size: var(--text-size-xl);
+    }
+  }
+}
