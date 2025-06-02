@@ -8,14 +8,14 @@
     <script src="scripts/main.js" type="module"></script>
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header" data-site-header>
       <div class="container">
         <a class="brand" href="#">
           <img
             src="assets/images/site-logo-small.svg"
             width="126"
             height="50"
-            alt="Alowishus delicious"
+            alt="Alowishus delicious logo"
           />
         </a>
         <div class="menu" data-site-header-menu>
@@ -27,6 +27,9 @@
               <li><a href="#">Alowishus Catering</a></li>
             </ul>
           </nav>
+          <a class="button button-primary show-on-tablet" href="#"
+            >Buy gift vouchers</a
+          >
         </div>
         <div class="actions">
           <button class="icon-box icon-box-primary" type="button">
@@ -34,10 +37,7 @@
               <use href="assets/icons/icons.svg#cart"></use>
             </svg>
           </button>
-          <a
-            class="button button-primary"
-            href="#"
-            data-move="[data-site-header-menu];61.99875em;last"
+          <a class="button button-primary hide-on-tablet" href="#"
             >Buy gift vouchers</a
           >
           <button
@@ -53,5 +53,63 @@
         </div>
       </div>
     </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="body">
+            <h1>Alowishus Delicious Coffee</h1>
+            <div class="description">
+              <p>
+                A drink from the ‘My Alowishus’ bottled brews range OR grab one
+                of our delicious coffee’s.
+              </p>
+            </div>
+            <div class="actions">
+              <a class="button button-large button-primary" href="#"
+                >Download App</a
+              >
+              <a class="link-underline" href="#">Shop Coffee</a>
+            </div>
+          </div>
+          <div class="image">
+            <img
+              class="award-image"
+              src="assets/images/cafe-of-the-year.png"
+              width="144"
+              height="113"
+              alt="Cafe of the year (2019-2020)"
+            />
+            <img
+              class="main-image"
+              src="assets/images/hero-image.png"
+              width="700"
+              height="712"
+              alt="Alowishus delicious coffee"
+            />
+            <div class="rating-box">
+              <div class="rating">
+                <svg width="28" height="28" aria-label="Rating 4.9 out of 5">
+                  <use href="assets/icons/icons.svg#star-primary"></use>
+                </svg>
+                <svg width="28" height="28" aria-hidden="true">
+                  <use href="assets/icons/icons.svg#star-primary"></use>
+                </svg>
+                <svg width="28" height="28" aria-hidden="true">
+                  <use href="assets/icons/icons.svg#star-primary"></use>
+                </svg>
+                <svg width="28" height="28" aria-hidden="true">
+                  <use href="assets/icons/icons.svg#star-primary"></use>
+                </svg>
+                <svg width="28" height="28" aria-hidden="true">
+                  <use href="assets/icons/icons.svg#star-primary"></use>
+                </svg>
+              </div>
+              <p>4.9 out of 5 Overall Star Rating for All Local Business.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

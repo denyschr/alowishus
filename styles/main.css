@@ -13,4 +13,7 @@
 /* Layout */
 @import url("layout/site-header.css");
 
+/* Partials */
+@import url("partials/hero-section.css");
+
 @import url("base/media-queries.css");

@@ -4,7 +4,7 @@ h3,
 .heading-1,
 .heading-2,
 .heading-3 {
-  color: var(--heading-primary-color);
+  color: var(--heading-color);
 }
 
 h1,
@@ -17,7 +17,7 @@ h2,
 
 h1,
 .heading-1 {
-  font-size: var(--text-size-7xl);
+  font-size: clamp(var(--text-size-6xl), 8vw, var(--text-size-7xl));
 }
 
 h2,

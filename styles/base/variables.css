@@ -6,37 +6,6 @@
   --gray-100: #eeeff1;
   --gray-200: #f3f4f5;
 
-  --body-background-color: linear-gradient(
-    173deg,
-    var(--white) 0%,
-    var(--white) 0%,
-    rgba(243, 244, 245, 0.2) 11.74%,
-    var(--gray-200) 27.92%,
-    rgba(243, 244, 245, 0) 44.79%,
-    rgba(243, 244, 245, 0.68) 60.42%,
-    var(--gray-200) 79.17%,
-    var(--white) 100%
-  );
-  --body-text-color-primary: var(--gray-dark);
-  --body-text-color-secondary: var(--gray);
-
-  --heading-primary-color: var(--gray-dark);
-
-  --hero-background-color: var(--gray-100);
-
-  --button-primary-text-color: var(--white);
-  --button-primary-background-color: var(--gray-dark);
-  --button-primary-background-color-hover: rgba(var(--gray-dark-rgb), 0.9);
-
-  --icon-box-text-color-hover: var(--white);
-  --icon-box-background-color: var(--white);
-  --icon-box-background-color-hover: var(--gray);
-  --icon-shadow: var(--shadow-sm);
-  --icon-box-primary-text-color: var(--gray-dark);
-  --icon-box-secondary-text-color: var(--gray);
-
-  --toggle-menu-button-text-color: var(--gray-dark);
-
   --font-family-base: "Jost", sans-serif;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -63,9 +32,44 @@
   --shadow-lg: 0 1.875rem 3.75rem 0 rgba(163, 168, 178, 0.15);
 
   --container-max-width: 77.5rem;
-  --container-padding-x: 1rem;
+  --container-padding-x: 0.875rem;
+
+  --body-background-color: linear-gradient(
+    173deg,
+    var(--white) 0%,
+    var(--white) 0%,
+    rgba(243, 244, 245, 0.2) 11.74%,
+    var(--gray-200) 27.92%,
+    rgba(243, 244, 245, 0) 44.79%,
+    rgba(243, 244, 245, 0.68) 60.42%,
+    var(--gray-200) 79.17%,
+    var(--white) 100%
+  );
+  --body-text-color: var(--gray);
+
+  --heading-color: var(--gray-dark);
+
+  --button-primary-text-color: var(--white);
+  --button-primary-background-color: var(--gray-dark);
+  --button-primary-background-color-hover: rgba(var(--gray-dark-rgb), 0.9);
+
+  --link-color: var(--gray-dark);
+
+  --icon-box-text-color-hover: var(--white);
+  --icon-box-background-color: var(--white);
+  --icon-box-background-color-hover: var(--gray);
+  --icon-shadow: var(--shadow-sm);
+  --icon-box-primary-text-color: var(--gray-dark);
+  --icon-box-secondary-text-color: var(--gray);
 
   --site-header-height: 6.5rem;
   --site-header-gap-x: clamp(1.5rem, 3vw, 2.5rem);
-  --site-header-menu-mobile-background-color: var(--gray-100);
+  --site-header-background-color-scroll: var(--gray-100);
+  --site-header-menu-background-color-mobile: var(--gray-100);
+
+  --toggle-menu-button-text-color: var(--gray-dark);
+
+  --hero-section-background-color: var(--gray-100);
+  --hero-rating-box-background-color: var(--white);
+  --hero-rating-box-star-color: var(--gray-dark);
 }

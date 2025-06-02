@@ -2,6 +2,7 @@ import { debounce } from "./utils.js";
 
 export default function initSiteHeader() {
   const body = document.body;
+  const container = document.querySelector("[data-site-header]");
   const toggleMenuButton = document.querySelector("[data-toggle-menu-button]");
 
   const toggleMenu = () => {
@@ -13,6 +14,13 @@ export default function initSiteHeader() {
   };
 
   toggleMenuButton.addEventListener("click", toggleMenu);
+
+  window.addEventListener("scroll", () => {
+    window.scrollY > 0
+      ? container.classList.add("scroll")
+      : container.classList.remove("scroll");
+  });
+
   window.addEventListener(
     "resize",
     debounce(() => {
