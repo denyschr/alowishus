@@ -19,6 +19,16 @@
       width: clamp(6.25rem, 10vw, 9rem);
     }
   }
+
+  .ordering-section {
+    .image {
+      translate: 0 -3.125rem;
+    }
+
+    .body {
+      max-width: 41.2903225806%;
+    }
+  }
 }
 
 @media (max-width: 61.99875em) {
@@ -58,6 +68,13 @@
 
     .award-image {
       width: clamp(5rem, 20vw, 9rem);
+    }
+  }
+
+  .ordering-section {
+    .container {
+      flex-direction: column-reverse;
+      align-items: center;
     }
   }
 }

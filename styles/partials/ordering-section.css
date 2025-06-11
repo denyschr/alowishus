@@ -1,0 +1,16 @@
+.ordering-section {
+  padding-bottom: clamp(3.75rem, 12vw, 10.625rem);
+
+  .container {
+    display: flex;
+    align-items: start;
+    gap: 1.25rem;
+  }
+
+  .section-head {
+    margin-block-end: clamp(1.25rem, 4vw, 3.75rem);
+    p {
+      margin: 0;
+    }
+  }
+}
