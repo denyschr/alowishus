@@ -23,7 +23,7 @@
 
 @media (max-width: 61.99875em) {
   :root {
-    --site-header-height: 4.625rem;
+    --header-height: 4.625rem;
   }
 
   .hide-on-tablet {
@@ -36,12 +36,12 @@
     align-items: center;
     row-gap: 1.25rem;
     position: fixed;
-    inset: var(--site-header-height) 0 0;
+    inset: var(--header-height) 0 0;
     padding: 1rem 1rem 2rem;
     translate: 100% 0;
     overflow-y: auto;
     border-block-start: 1px solid var(--gray-dark);
-    background-color: var(--site-header-menu-background-color-mobile);
+    background-color: var(--header-menu-background-color-mobile);
     transition: translate 0.2s ease-in-out;
     nav ul {
       flex-direction: column;
@@ -58,6 +58,14 @@
 
     .award-image {
       width: clamp(5rem, 20vw, 9rem);
+    }
+  }
+}
+
+@media (max-width: 47.99875em) {
+  .categories-section {
+    &::before {
+      display: none;
     }
   }
 }

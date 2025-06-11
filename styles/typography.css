@@ -22,11 +22,15 @@ h1,
 
 h2,
 .heading-2 {
-  font-size: var(--text-size-6xl);
+  font-size: clamp(var(--text-size-5xl), 5vw, var(--text-size-6xl));
 }
 
 h3,
 .heading-3 {
-  font-size: var(--text-size-5xl);
+  font-size: clamp(var(--text-size-3xl), 3.5vw, var(--text-size-5xl));
   font-weight: var(--font-weight-semi-bold);
+}
+
+.text-2xl {
+  font-size: clamp(var(--text-size-lg), 2.5vw, var(--text-size-2xl));
 }

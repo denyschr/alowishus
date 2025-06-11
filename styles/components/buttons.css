@@ -4,13 +4,14 @@
   font-size: var(--text-size-md);
   font-weight: var(--font-weight-medium);
   line-height: 1.6;
+  text-align: center;
   text-transform: uppercase;
   border-radius: var(--border-radius-circle);
   transition: background-color 0.2s ease-in-out;
 }
 
 .button-large {
-  padding: 1.25rem 2.5rem;
+  padding: clamp(0.875rem, 2vw, 1.25rem) clamp(1rem, 4vw, 2.5rem);
 }
 
 .button-primary {

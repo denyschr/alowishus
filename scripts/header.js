@@ -1,11 +1,11 @@
 import { debounce } from "./utils.js";
 
-export default function initSiteHeader() {
+const initHeader = () => {
   const body = document.body;
-  const container = document.querySelector("[data-site-header]");
+  const container = document.querySelector("[data-header]");
   const toggleMenuButton = document.querySelector("[data-toggle-menu-button]");
 
-  const toggleMenu = () => {
+  const onToggle = () => {
     body.classList.toggle("prevent-scroll");
     body.classList.contains("menu-open")
       ? toggleMenuButton.setAttribute("aria-expanded", "false")
@@ -13,13 +13,17 @@ export default function initSiteHeader() {
     body.classList.toggle("menu-open");
   };
 
-  toggleMenuButton.addEventListener("click", toggleMenu);
-
-  window.addEventListener("scroll", () => {
+  const onScroll = () => {
     window.scrollY > 0
       ? container.classList.add("scroll")
       : container.classList.remove("scroll");
-  });
+  };
+
+  onScroll();
+
+  toggleMenuButton.addEventListener("click", onToggle);
+
+  window.addEventListener("scroll", onScroll);
 
   window.addEventListener(
     "resize",
@@ -31,4 +35,6 @@ export default function initSiteHeader() {
       }
     })
   );
-}
+};
+
+export default initHeader;

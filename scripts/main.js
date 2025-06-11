@@ -1,3 +1,3 @@
-import initSiteHeader from "./site-header.js";
+import initHeader from "./header.js";
 
-initSiteHeader();
+initHeader();

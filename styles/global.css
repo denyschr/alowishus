@@ -5,7 +5,8 @@ body {
   font-size: clamp(var(--text-size-md), 2vw, var(--text-size-lg));
   line-height: 1.5;
   color: var(--body-text-color);
-  background-color: var(--body-background-color);
+  background: var(--body-background-color);
+  background-attachment: fixed;
   &.prevent-scroll {
     overflow: hidden;
   }

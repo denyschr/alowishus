@@ -1,19 +1,16 @@
-/* Base */
-@import url("base/fonts.css");
-@import url("base/reset.css");
-@import url("base/variables.css");
-@import url("base/utilities.css");
-@import url("base/typography.css");
-@import url("base/global.css");
+@import url("fonts.css");
+@import url("reset.css");
+@import url("variables.css");
+@import url("utilities.css");
+@import url("typography.css");
+@import url("global.css");
 
-/* Components */
 @import url("components/buttons.css");
 @import url("components/icon-boxes.css");
 
-/* Layout */
 @import url("layout/site-header.css");
 
-/* Partials */
 @import url("partials/hero-section.css");
+@import url("partials/category-section.css");
 
-@import url("base/media-queries.css");
+@import url("media-queries.css");

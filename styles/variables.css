@@ -1,5 +1,6 @@
 :root {
   --white: #ffffff;
+  --white-rgb: 255, 255, 255;
   --gray: #64646a;
   --gray-dark: #1b1b1d;
   --gray-dark-rgb: 27, 27, 29;
@@ -30,6 +31,8 @@
   --shadow-sm: 0 0.75rem 1.875rem 0 rgba(205, 209, 214, 0.28);
   --shadow-base: 0 1.25rem 3.75rem 0 rgba(163, 168, 178, 0.15);
   --shadow-lg: 0 1.875rem 3.75rem 0 rgba(163, 168, 178, 0.15);
+
+  --z-index-header: 1030;
 
   --container-max-width: 77.5rem;
   --container-padding-x: 0.875rem;
@@ -62,14 +65,20 @@
   --icon-box-primary-text-color: var(--gray-dark);
   --icon-box-secondary-text-color: var(--gray);
 
-  --site-header-height: 6.5rem;
-  --site-header-gap-x: clamp(1.5rem, 3vw, 2.5rem);
-  --site-header-background-color-scroll: var(--gray-100);
-  --site-header-menu-background-color-mobile: var(--gray-100);
+  --header-height: 6.5rem;
+  --header-gap-x: clamp(1.5rem, 3vw, 2.5rem);
+  --header-background-color-scroll: var(--gray-100);
+  --header-menu-background-color-mobile: var(--gray-100);
 
   --toggle-menu-button-text-color: var(--gray-dark);
 
-  --hero-section-background-color: var(--gray-100);
+  --hero-background-color: var(--gray-100);
   --hero-rating-box-background-color: var(--white);
   --hero-rating-box-star-color: var(--gray-dark);
+
+  --category-card-background-color: linear-gradient(
+    152deg,
+    var(--white) 0%,
+    rgba(var(--white-rgb), 0) 100%
+  );
 }

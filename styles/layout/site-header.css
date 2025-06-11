@@ -2,19 +2,20 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 1000;
+  z-index: var(--z-index-header);
   width: 100%;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   &.scroll {
-    background-color: var(--site-header-background-color-scroll);
+    background-color: var(--header-background-color-scroll);
+    box-shadow: 0 0 0.5rem 0 currentColor;
   }
 
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: var(--site-header-height);
-    column-gap: var(--site-header-gap-x);
+    min-height: var(--header-height);
+    column-gap: var(--header-gap-x);
     padding-block: 0.313rem;
   }
 
@@ -46,7 +47,7 @@
       align-items: center;
       justify-content: end;
       flex-wrap: wrap;
-      column-gap: var(--site-header-gap-x);
+      column-gap: var(--header-gap-x);
       font-size: var(--text-size-base);
       font-weight: var(--font-weight-medium);
       a {
