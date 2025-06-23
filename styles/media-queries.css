@@ -20,11 +20,8 @@
     }
   }
 
-  .ordering-section {
-    .image {
-      translate: 0 -3.125rem;
-    }
-
+  .ordering-section,
+  .app-promo-section {
     .body {
       max-width: 41.2903225806%;
     }
@@ -87,10 +84,18 @@
       align-items: center;
     }
   }
+
+  .app-promo-section {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 
 @media (max-width: 47.99875em) {
-  .categories-section {
+  .categories-section,
+  .app-promo-section {
     &::before {
       display: none;
     }

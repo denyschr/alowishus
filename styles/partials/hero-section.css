@@ -23,7 +23,6 @@
     margin-block-end: clamp(1.25rem, 4vw, 3.75rem);
     p {
       max-width: 33.125rem;
-      margin: 0;
     }
   }
 

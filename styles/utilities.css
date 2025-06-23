@@ -13,9 +13,12 @@
     row-gap: clamp(1rem, 3vw, 1.5rem);
   }
 
+  &.text-center p {
+    margin-inline: auto;
+  }
+
   p {
     max-width: 37.75rem;
-    margin-inline: auto;
   }
 }
 

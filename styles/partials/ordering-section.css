@@ -3,14 +3,11 @@
 
   .container {
     display: flex;
-    align-items: start;
+    align-items: center;
     gap: 1.25rem;
   }
 
   .section-head {
     margin-block-end: clamp(1.25rem, 4vw, 3.75rem);
-    p {
-      margin: 0;
-    }
   }
 }

@@ -1,0 +1,27 @@
+.app-promo-section {
+  position: relative;
+  isolation: isolate;
+  padding-block-end: clamp(3.75rem, 14vw, 13.75rem);
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5rem;
+    left: -10rem;
+    z-index: -1;
+    height: 25.5rem;
+    aspect-ratio: 1;
+    background: url("../../assets/images/alowishus-coffee-cup-design-3.png") top /
+      contain no-repeat;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+
+  .section-head {
+    margin-block-end: clamp(1.25rem, 4vw, 3.75rem);
+  }
+}
