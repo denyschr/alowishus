@@ -11,6 +11,11 @@
   font: inherit;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   height: 100%;
   &:focus-within {

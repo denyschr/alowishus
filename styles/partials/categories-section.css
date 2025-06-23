@@ -1,0 +1,52 @@
+.categories-section {
+  position: relative;
+  isolation: isolate;
+  padding-block-end: clamp(3.75rem, 14vw, 11.875rem);
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5.625rem;
+    left: -16.25rem;
+    z-index: -1;
+    height: 43.125rem;
+    aspect-ratio: 1;
+    background: url("../../assets/images/alowishus-coffee-cup-design-1.png") top /
+      contain no-repeat;
+  }
+
+  .section-head {
+    margin-block-end: clamp(2.5rem, 8vw, 5.625rem);
+  }
+}
+
+.categories-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(18.75rem, 100%), 1fr));
+  gap: clamp(1rem, 2vw, 1.875rem);
+  article {
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(1.875rem, 5vw, 3.75rem);
+    height: 100%;
+    padding: clamp(1.25rem, 3vw, 2.5rem);
+    border-radius: var(--border-radius-md);
+    background: var(--category-card-background-color);
+    box-shadow: var(--category-card-shadow);
+    > :first-child {
+      flex-grow: 1;
+    }
+
+    h3 {
+      margin-block-end: 0.5rem;
+    }
+
+    .image,
+    .button {
+      align-self: center;
+    }
+
+    .button {
+      min-width: 14.063rem;
+    }
+  }
+}

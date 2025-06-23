@@ -31,6 +31,16 @@
   }
 }
 
+@media (min-width: 48em) {
+  .bestsellers-list {
+    article {
+      .info {
+        max-width: 10.125rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 61.99875em) {
   :root {
     --header-height: 4.625rem;
@@ -85,6 +95,12 @@
       display: none;
     }
   }
+
+  .bestsellers-section {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 29.99875em) {
@@ -92,6 +108,25 @@
     .rating-box {
       bottom: 0;
       padding: 1rem;
+    }
+  }
+}
+
+@media (max-width: 24.37375em) {
+  .bestsellers-list {
+    article {
+      header {
+        flex-direction: column;
+        padding-inline: 1.25rem;
+      }
+
+      .image {
+        align-self: center;
+      }
+
+      .info {
+        padding-block-start: 0;
+      }
     }
   }
 }

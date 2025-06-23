@@ -1,5 +1,5 @@
 .ordering-section {
-  padding-bottom: clamp(3.75rem, 12vw, 10.625rem);
+  padding-block-end: clamp(3.75rem, 12vw, 10.625rem);
 
   .container {
     display: flex;

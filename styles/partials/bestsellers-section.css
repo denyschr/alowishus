@@ -1,0 +1,90 @@
+.bestsellers-section {
+  --bestseller-card-image-offset-y: 4.625rem;
+  position: relative;
+  isolation: isolate;
+  padding-block-end: clamp(3.75rem, 14vw, 12.5rem);
+  &::after {
+    content: "";
+    position: absolute;
+    top: -130px;
+    right: -120px;
+    z-index: -1;
+    height: 19.625rem;
+    aspect-ratio: 1;
+    filter: blur(0.25rem);
+    background: url("../../assets/images/alowishus-coffee-cup-design-2.png") top /
+      contain no-repeat;
+  }
+
+  .section-head {
+    margin-block-end: calc(
+      clamp(3.75rem, 8vw, 6.5rem) + var(--bestseller-card-image-offset-y)
+    );
+  }
+}
+
+.bestsellers-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(22.5rem, 100%), 1fr));
+  gap: calc(var(--bestseller-card-image-offset-y) + 2rem) 1.875rem;
+  article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: var(--border-radius-md);
+    background-color: var(--bestseller-card-background-color);
+    box-shadow: var(--bestseller-card-shadow);
+    header {
+      display: flex;
+      align-items: start;
+      flex-grow: 1;
+      gap: 1rem;
+      padding-inline-end: clamp(1.25rem, 3vw, 1.875rem);
+    }
+
+    .image {
+      margin-block-start: calc(var(--bestseller-card-image-offset-y) * -1);
+      img {
+        aspect-ratio: 186 / 308;
+      }
+    }
+
+    .info {
+      padding-block-start: clamp(1.25rem, 4vw, 2.5rem);
+    }
+
+    .badge {
+      display: inline-block;
+      margin-block-end: 0.5rem;
+      font-weight: var(--font-weight-medium);
+    }
+
+    .body {
+      padding: 1.5rem clamp(1.25rem, 3vw, 1.875rem)
+        clamp(1.25rem, 4vw, 2.188rem);
+    }
+
+    .description {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      margin-block-end: clamp(1.125rem, 4vw, 2.5rem);
+      overflow: hidden;
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .price {
+      font-size: clamp(var(--text-size-2xl), 3vw, var(--text-size-3xl));
+      font-weight: var(--font-weight-medium);
+      color: var(--bestseller-card-price-text-color);
+    }
+  }
+}

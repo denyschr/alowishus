@@ -11,7 +11,8 @@
 @import url("layout/site-header.css");
 
 @import url("partials/hero-section.css");
-@import url("partials/category-section.css");
+@import url("partials/categories-section.css");
 @import url("partials/ordering-section.css");
+@import url("partials/bestsellers-section.css");
 
 @import url("media-queries.css");

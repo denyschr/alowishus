@@ -81,4 +81,13 @@
     var(--white) 0%,
     rgba(var(--white-rgb), 0) 100%
   );
+  --category-card-shadow: 0 1.875rem 3.75rem 0 rgba(163, 168, 178, 0.15);
+
+  --bestseller-card-background-color: linear-gradient(
+    142deg,
+    #fff 0%,
+    rgba(var(--white-rgb), 0) 100%
+  );
+  --bestseller-card-shadow: 0 1.25rem 3.75rem 0 rgba(163, 168, 178, 0.15);
+  --bestseller-card-price-text-color: var(--gray-dark);
 }
