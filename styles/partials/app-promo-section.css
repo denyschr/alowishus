@@ -1,7 +1,7 @@
 .app-promo-section {
   position: relative;
   isolation: isolate;
-  padding-block-end: clamp(3.75rem, 14vw, 13.75rem);
+  padding-block-end: clamp(2rem, 6vw, 6.25rem);
   &::before {
     content: "";
     position: absolute;
@@ -10,8 +10,8 @@
     z-index: -1;
     height: 25.5rem;
     aspect-ratio: 1;
-    background: url("../../assets/images/alowishus-coffee-cup-design-3.png") top /
-      contain no-repeat;
+    background: url("../../assets/images/alowishus-coffee-cup-design-3.png")
+      center / contain no-repeat;
   }
 
   .container {

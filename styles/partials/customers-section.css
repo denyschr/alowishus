@@ -1,0 +1,103 @@
+.customers-section {
+  position: relative;
+  isolation: isolate;
+  padding-block-end: clamp(3.75rem, 14vw, 13.125rem);
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    aspect-ratio: 1;
+  }
+
+  &::before {
+    top: -21.25rem;
+    left: -8.75rem;
+    height: 35.5rem;
+    filter: blur(0.188rem);
+    background: url("../../assets/images/alowishus-coffee-cup-design-4.png")
+      center / contain no-repeat;
+  }
+
+  &::after {
+    right: -13.125rem;
+    bottom: 2rem;
+    height: 31.25rem;
+    background: url("../../assets/images/alowishus-coffee-cup-design-5.png")
+      center / contain no-repeat;
+  }
+
+  .container {
+    --customers-body-max-width: clamp(23.375rem, 30vw, 28.375rem);
+    --customers-body-margin-left: clamp(2.5rem, 6vw, 6.25rem);
+    display: flex;
+    align-items: start;
+    flex-direction: row-reverse;
+    row-gap: 2rem;
+    > .body {
+      h2 {
+        margin-block-end: clamp(1rem, 4vw, 2.5rem);
+      }
+
+      .rating {
+        display: grid;
+        grid-template-areas:
+          "score stars"
+          "score text";
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        column-gap: 1.5rem;
+        row-gap: 0.5rem;
+        margin-block-end: clamp(1.875rem, 6vw, 6.25rem);
+        .score {
+          grid-area: score;
+        }
+
+        .stars {
+          grid-area: stars;
+          color: var(--customer-rating-star-color);
+        }
+
+        .text {
+          grid-area: text;
+        }
+      }
+    }
+  }
+
+  .swiper {
+    width: 100%;
+  }
+}
+
+.customer {
+  height: 100%;
+  overflow: hidden;
+  border-radius: var(--border-radius-base);
+  background: var(--customer-card-background-color);
+  border: 1px solid var(--customer-card-border-color);
+  .image {
+    img {
+      width: 100%;
+      aspect-ratio: 468 / 324;
+    }
+  }
+
+  .body {
+    padding: clamp(1rem, 4vw, 2.5rem);
+  }
+
+  .info {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin-block-end: clamp(1.25rem, 3vw, 2rem);
+  }
+
+  .stars {
+    display: flex;
+    align-items: start;
+    column-gap: 0.25rem;
+    color: var(--customer-rating-star-color);
+  }
+}

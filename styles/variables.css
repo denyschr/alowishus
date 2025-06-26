@@ -1,11 +1,13 @@
 :root {
   --white: #ffffff;
   --white-rgb: 255, 255, 255;
+  --black: #000000;
   --gray: #64646a;
   --gray-dark: #1b1b1d;
   --gray-dark-rgb: 27, 27, 29;
   --gray-100: #eeeff1;
   --gray-200: #f3f4f5;
+  --yellow: #ffb700;
 
   --font-family-base: "Jost", sans-serif;
   --font-weight-regular: 400;
@@ -65,6 +67,13 @@
   --icon-box-primary-text-color: var(--gray-dark);
   --icon-box-secondary-text-color: var(--gray);
 
+  --slider-navigation-button-text-color: var(--black);
+  --slider-navigation-button-text-color-hover: var(--white);
+  --slider-navigation-button-background-color: var(--white);
+  --slider-navigation-button-background-color-hover: var(--black);
+  --slider-navigation-button-box-shadow: 0 0.75rem 1.875rem
+    rgba(205, 209, 214, 0.28);
+
   --header-height: 6.5rem;
   --header-gap-x: clamp(1.5rem, 3vw, 2.5rem);
   --header-background-color-scroll: var(--gray-100);
@@ -85,9 +94,17 @@
 
   --bestseller-card-background-color: linear-gradient(
     142deg,
-    #fff 0%,
+    var(--white) 0%,
     rgba(var(--white-rgb), 0) 100%
   );
   --bestseller-card-shadow: 0 1.25rem 3.75rem 0 rgba(163, 168, 178, 0.15);
   --bestseller-card-price-text-color: var(--gray-dark);
+
+  --customer-card-border-color: rgba(var(--gray-dark-rgb), 0.2);
+  --customer-card-background-color: linear-gradient(
+    142deg,
+    var(--white) 0%,
+    rgba(var(--white-rgb), 0) 100%
+  );
+  --customer-rating-star-color: var(--yellow);
 }

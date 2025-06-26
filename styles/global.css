@@ -1,3 +1,9 @@
+html {
+  &.prevent-scroll {
+    overflow-y: hidden;
+  }
+}
+
 body {
   min-width: 20rem;
   font-family: var(--font-family-base);
@@ -7,11 +13,13 @@ body {
   color: var(--body-text-color);
   background: var(--body-background-color);
   background-attachment: fixed;
-  &.prevent-scroll {
-    overflow-y: hidden;
-  }
 }
 
 a {
   color: var(--link-color);
+}
+
+.swiper-slide {
+  min-height: 100%;
+  height: auto;
 }

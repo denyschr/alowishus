@@ -1,16 +1,16 @@
 import { debounce } from "./utils.js";
 
 const initHeader = () => {
-  const body = document.body;
+  const root = document.documentElement;
   const container = document.querySelector("[data-header]");
   const toggleMenuButton = document.querySelector("[data-toggle-menu-button]");
 
   const onToggle = () => {
-    body.classList.toggle("prevent-scroll");
-    body.classList.contains("menu-open")
+    root.classList.toggle("prevent-scroll");
+    root.classList.contains("menu-open")
       ? toggleMenuButton.setAttribute("aria-expanded", "false")
       : toggleMenuButton.setAttribute("aria-expanded", "true");
-    body.classList.toggle("menu-open");
+    root.classList.toggle("menu-open");
   };
 
   const onScroll = () => {
@@ -29,8 +29,8 @@ const initHeader = () => {
     "resize",
     debounce(() => {
       if (window.innerWidth >= 992) {
-        body.classList.remove("prevent-scroll");
-        body.classList.remove("menu-open");
+        root.classList.remove("prevent-scroll");
+        root.classList.remove("menu-open");
         toggleMenuButton.setAttribute("aria-expanded", "false");
       }
     })

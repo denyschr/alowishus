@@ -1,0 +1,29 @@
+.slider-navigation {
+  display: flex;
+  align-items: center;
+  column-gap: clamp(1rem, 3vw, 1.5rem);
+  button {
+    display: inline-grid;
+    place-content: center;
+    width: 3.75rem;
+    height: 3.75rem;
+    color: var(--slider-navigation-button-text-color);
+    border-radius: var(--border-radius-circle);
+    background-color: var(--slider-navigation-button-background-color);
+    box-shadow: var(--slider-navigation-button-box-shadow);
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--slider-navigation-button-text-color-hover);
+        background-color: var(
+          --slider-navigation-button-background-color-hover
+        );
+      }
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  }
+}

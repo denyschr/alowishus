@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alowishus</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="styles/main.css" />
     <script src="scripts/main.js" type="module"></script>
   </head>
@@ -88,21 +92,21 @@
               alt="Alowishus delicious coffee"
             />
             <div class="rating-box">
-              <div class="rating">
-                <svg width="28" height="28" aria-label="Rating 4.9 out of 5">
-                  <use href="assets/icons/icons.svg#star-primary"></use>
+              <div class="rating" aria-hidden="true">
+                <svg width="28" height="28">
+                  <use href="assets/icons/icons.svg#star-contrast"></use>
                 </svg>
-                <svg width="28" height="28" aria-hidden="true">
-                  <use href="assets/icons/icons.svg#star-primary"></use>
+                <svg width="28" height="28">
+                  <use href="assets/icons/icons.svg#star-contrast"></use>
                 </svg>
-                <svg width="28" height="28" aria-hidden="true">
-                  <use href="assets/icons/icons.svg#star-primary"></use>
+                <svg width="28" height="28">
+                  <use href="assets/icons/icons.svg#star-contrast"></use>
                 </svg>
-                <svg width="28" height="28" aria-hidden="true">
-                  <use href="assets/icons/icons.svg#star-primary"></use>
+                <svg width="28" height="28">
+                  <use href="assets/icons/icons.svg#star-contrast"></use>
                 </svg>
-                <svg width="28" height="28" aria-hidden="true">
-                  <use href="assets/icons/icons.svg#star-primary"></use>
+                <svg width="28" height="28">
+                  <use href="assets/icons/icons.svg#star-contrast"></use>
                 </svg>
               </div>
               <p>4.9 out of 5 Overall Star Rating for All Local Business.</p>
@@ -233,6 +237,7 @@
                       src="assets/images/bestsellers/double-espresso.png"
                       width="186"
                       height="308"
+                      loading="lazy"
                       alt="Double Espresso"
                     />
                   </div>
@@ -262,6 +267,7 @@
                       src="assets/images/bestsellers/caramel-frappe.png"
                       width="186"
                       height="308"
+                      loading="lazy"
                       alt="Caramel Frappe"
                     />
                   </div>
@@ -291,6 +297,7 @@
                       src="assets/images/bestsellers/iced-coffee.png"
                       width="186"
                       height="308"
+                      loading="lazy"
                       alt="Iced Coffee"
                     />
                   </div>
@@ -335,8 +342,311 @@
               src="assets/images/app-promo-illustration.png"
               width="780"
               height="727"
+              loading="lazy"
               alt="Our coffee app"
             />
+          </div>
+        </div>
+      </section>
+
+      <section class="customers-section">
+        <div class="container">
+          <div class="body">
+            <h2>What Our Customers Say</h2>
+            <div class="rating">
+              <span class="score | heading-3" aria-hidden="true">4.9</span>
+              <div class="stars">
+                <svg
+                  width="20"
+                  height="20"
+                  aria-label="Rating: 4.9 out of 5 stars"
+                >
+                  <use href="assets/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="20" height="20" aria-hidden="true">
+                  <use href="assets/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="20" height="20" aria-hidden="true">
+                  <use href="assets/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="20" height="20" aria-hidden="true">
+                  <use href="assets/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="20" height="20" aria-hidden="true">
+                  <use href="assets/icons/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="text">based on 2452+ reviews</p>
+            </div>
+            <div class="slider-navigation">
+              <button
+                type="button"
+                aria-label="Previous slide"
+                data-customers-slider-button-prev
+              >
+                <svg width="30" height="30" aria-hidden="true">
+                  <use href="assets/icons/icons.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <button
+                type="button"
+                aria-label="Next slide"
+                data-customers-slider-button-next
+              >
+                <svg width="30" height="30" aria-hidden="true">
+                  <use href="assets/icons/icons.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper" data-customers-slider>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="customer">
+                  <div class="image">
+                    <img
+                      src="assets/images/customers/imam-white.png"
+                      width="468"
+                      height="324"
+                      loading="lazy"
+                      alt="Imam White"
+                    />
+                  </div>
+                  <div class="body">
+                    <div class="info">
+                      <h3 class="heading-5">Imam White</h3>
+                      <div class="stars">
+                        <svg
+                          width="20"
+                          height="20"
+                          aria-label="Rating: 5 out of 5 stars"
+                        >
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <blockquote>
+                      <p>
+                        “Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet. Amet minim mollit non deserunt ullamco est sit
+                        aliqua dolor do amet sint. Velit officia”
+                      </p>
+                    </blockquote>
+                  </div>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="customer">
+                  <div class="image">
+                    <img
+                      src="assets/images/customers/brooklyn-simmons.png"
+                      width="468"
+                      height="324"
+                      loading="lazy"
+                      alt="Brooklyn Simmons"
+                    />
+                  </div>
+                  <div class="body">
+                    <div class="info">
+                      <h3 class="heading-5">Brooklyn Simmons</h3>
+                      <div class="stars">
+                        <svg
+                          width="20"
+                          height="20"
+                          aria-label="Rating: 5 out of 5 stars"
+                        >
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <blockquote>
+                      <p>
+                        “Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet. Amet minim mollit non deserunt ullamco est sit
+                        aliqua dolor do amet sint. Velit officia”
+                      </p>
+                    </blockquote>
+                  </div>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="customer">
+                  <div class="image">
+                    <img
+                      src="assets/images/customers/imam-white.png"
+                      width="468"
+                      height="324"
+                      loading="lazy"
+                      alt="Imam White"
+                    />
+                  </div>
+                  <div class="body">
+                    <div class="info">
+                      <h3 class="heading-5">Imam White</h3>
+                      <div class="stars">
+                        <svg
+                          width="20"
+                          height="20"
+                          aria-label="Rating: 5 out of 5 stars"
+                        >
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <blockquote>
+                      <p>
+                        “Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet. Amet minim mollit non deserunt ullamco est sit
+                        aliqua dolor do amet sint. Velit officia”
+                      </p>
+                    </blockquote>
+                  </div>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="customer">
+                  <div class="image">
+                    <img
+                      src="assets/images/customers/brooklyn-simmons.png"
+                      width="468"
+                      height="324"
+                      loading="lazy"
+                      alt="Brooklyn Simmons"
+                    />
+                  </div>
+                  <div class="body">
+                    <div class="info">
+                      <h3 class="heading-5">Brooklyn Simmons</h3>
+                      <div class="stars">
+                        <svg
+                          width="20"
+                          height="20"
+                          aria-label="Rating: 5 out of 5 stars"
+                        >
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <blockquote>
+                      <p>
+                        “Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet. Amet minim mollit non deserunt ullamco est sit
+                        aliqua dolor do amet sint. Velit officia”
+                      </p>
+                    </blockquote>
+                  </div>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="customer">
+                  <div class="image">
+                    <img
+                      src="assets/images/customers/imam-white.png"
+                      width="468"
+                      height="324"
+                      loading="lazy"
+                      alt="Imam White"
+                    />
+                  </div>
+                  <div class="body">
+                    <div class="info">
+                      <h3 class="heading-5">Imam White</h3>
+                      <div class="stars">
+                        <svg
+                          width="20"
+                          height="20"
+                          aria-label="Rating: 5 out of 5 stars"
+                        >
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use href="assets/icons/icons.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <blockquote>
+                      <p>
+                        “Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet. Amet minim mollit non deserunt ullamco est sit
+                        aliqua dolor do amet sint. Velit officia”
+                      </p>
+                    </blockquote>
+                  </div>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
       </section>
