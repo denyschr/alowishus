@@ -1,3 +1,24 @@
+@media (min-width: 48em) {
+  .bestsellers-list {
+    article {
+      .info {
+        max-width: 10.125rem;
+      }
+    }
+  }
+
+  .site-footer {
+    .left-column {
+      max-width: 24.875rem;
+    }
+
+    .right-column {
+      flex-grow: 1;
+      max-width: 28.625rem;
+    }
+  }
+}
+
 @media (min-width: 62em) {
   .show-on-tablet {
     display: none;
@@ -48,14 +69,10 @@
       );
     }
   }
-}
 
-@media (min-width: 48em) {
-  .bestsellers-list {
-    article {
-      .info {
-        max-width: 10.125rem;
-      }
+  .site-footer {
+    .left-column {
+      max-width: 34.875rem;
     }
   }
 }
@@ -152,6 +169,35 @@
   .customer {
     .info {
       flex-direction: column;
+    }
+  }
+
+  .site-footer {
+    .main {
+      flex-direction: column;
+    }
+
+    .extra {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      ul {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 35.99875em) {
+  .site-footer {
+    .right-column {
+      width: 100%;
+    }
+  }
+
+  .subscribe-section {
+    button {
+      width: 100%;
     }
   }
 }

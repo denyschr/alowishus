@@ -1,0 +1,12 @@
+.form-control {
+  width: 100%;
+  height: 4.375rem;
+  padding-inline: 1.875rem;
+  font-size: clamp(var(--text-size-lg), 2.5vw, var(--text-size-xl));
+  border-radius: var(--border-radius-circle);
+  background-color: var(--form-control-background-color);
+  box-shadow: var(--form-control-shadow);
+  &::placeholder {
+    color: var(--form-control-placeholder-color);
+  }
+}

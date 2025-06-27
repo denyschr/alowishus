@@ -3,6 +3,7 @@
   --white-rgb: 255, 255, 255;
   --black: #000000;
   --gray: #64646a;
+  --gray-rgb: 100, 100, 106;
   --gray-dark: #1b1b1d;
   --gray-dark-rgb: 27, 27, 29;
   --gray-100: #eeeff1;
@@ -60,19 +61,18 @@
 
   --link-color: var(--gray-dark);
 
+  --divider-color: rgba(var(--gray-dark-rgb), 0.1);
+
+  --form-control-background-color: var(--white);
+  --form-control-shadow: var(--shadow-sm);
+  --form-control-placeholder-color: rgba(var(--gray-rgb), 0.7);
+
   --icon-box-text-color-hover: var(--white);
   --icon-box-background-color: var(--white);
   --icon-box-background-color-hover: var(--gray);
-  --icon-shadow: var(--shadow-sm);
+  --icon-box-shadow: var(--shadow-sm);
   --icon-box-primary-text-color: var(--gray-dark);
   --icon-box-secondary-text-color: var(--gray);
-
-  --slider-navigation-button-text-color: var(--black);
-  --slider-navigation-button-text-color-hover: var(--white);
-  --slider-navigation-button-background-color: var(--white);
-  --slider-navigation-button-background-color-hover: var(--black);
-  --slider-navigation-button-box-shadow: 0 0.75rem 1.875rem
-    rgba(205, 209, 214, 0.28);
 
   --header-height: 6.5rem;
   --header-gap-x: clamp(1.5rem, 3vw, 2.5rem);
@@ -107,4 +107,9 @@
     rgba(var(--white-rgb), 0) 100%
   );
   --customer-rating-star-color: var(--yellow);
+
+  --footer-extra-link-color: var(--gray);
+  --footer-brand-name-color: var(--gray-dark);
+
+  --contact-section-link-color: var(--gray);
 }

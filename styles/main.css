@@ -6,10 +6,13 @@
 @import url("global.css");
 
 @import url("components/buttons.css");
+@import url("components/form-control.css");
 @import url("components/icon-boxes.css");
 @import url("components/slider-navigation.css");
+@import url("components/social-bookmarks.css");
 
 @import url("layout/site-header.css");
+@import url("layout/site-footer.css");
 
 @import url("partials/hero-section.css");
 @import url("partials/categories-section.css");

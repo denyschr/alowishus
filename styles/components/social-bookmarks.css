@@ -1,0 +1,6 @@
+.social-bookmarks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+}

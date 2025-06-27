@@ -2,11 +2,11 @@
   display: inline-grid;
   place-content: center;
   flex-shrink: 0;
-  width: 3.75rem;
-  height: 3.75rem;
+  width: clamp(3rem, 10vw, 3.75rem);
+  height: clamp(3rem, 10vw, 3.75rem);
   border-radius: var(--border-radius-circle);
   background-color: var(--icon-box-background-color);
-  filter: drop-shadow(var(--icon-box-shadow));
+  box-shadow: var(--icon-box-shadow);
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   @media (any-hover: hover) {
     &:hover {
