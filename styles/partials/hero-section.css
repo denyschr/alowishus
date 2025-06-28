@@ -50,6 +50,7 @@
 
   .main-image {
     aspect-ratio: 700 / 712;
+    animation: bounceCup 2s infinite alternate ease-in-out;
   }
 
   .rating-box {
@@ -71,5 +72,14 @@
     p {
       font-size: var(--fluid-text-base-md);
     }
+  }
+}
+
+@keyframes bounceCup {
+  0% {
+    translate: 0;
+  }
+  100% {
+    translate: 0 -1.25rem;
   }
 }
