@@ -19,7 +19,8 @@ a {
   color: var(--link-color);
 }
 
-.swiper-slide {
-  min-height: 100%;
-  height: auto;
+:focus-visible {
+  outline: 2px solid var(--outline-color);
+  outline-offset: 3px;
+  transition-duration: 0s !important;
 }

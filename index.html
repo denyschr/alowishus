@@ -59,11 +59,11 @@
     </header>
 
     <main>
-      <section class="hero-section">
+      <section class="hero-section" aria-labelledby="hero-heading">
         <div class="container">
           <div class="body">
             <div class="section-head">
-              <h1>Alowishus Delicious Coffee</h1>
+              <h1 id="hero-heading">Alowishus Delicious Coffee</h1>
               <p class="text-2xl">
                 A drink from the ‘My Alowishus’ bottled brews range OR grab one
                 of our delicious coffee’s.
@@ -115,16 +115,16 @@
         </div>
       </section>
 
-      <section class="categories-section">
+      <section class="categories-section" aria-labelledby="categories-heading">
         <div class="container">
           <header class="section-head tight text-center">
-            <h2>Explore Our Alowishus</h2>
+            <h2 id="categories-heading">Explore Our Alowishus</h2>
             <p class="text-2xl">
               A drink from the ‘My Alowishus’ bottled brews range OR grab one of
               our delicious coffee’s.
             </p>
           </header>
-          <ul class="categories-list">
+          <ul class="categories-list" role="presentation">
             <li>
               <article>
                 <div>
@@ -194,7 +194,7 @@
         </div>
       </section>
 
-      <section class="ordering-section">
+      <section class="ordering-section" aria-labelledby="ordering-heading">
         <div class="container">
           <div class="image">
             <img
@@ -207,7 +207,7 @@
           </div>
           <div class="body">
             <div class="section-head">
-              <h2>Order Your Favourite Coffee</h2>
+              <h2 id="ordering-heading">Order Your Favourite Coffee</h2>
               <p class="text-2xl">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
@@ -219,10 +219,13 @@
         </div>
       </section>
 
-      <section class="bestsellers-section">
+      <section
+        class="bestsellers-section"
+        aria-labelledby="bestsellers-heading"
+      >
         <div class="container">
           <header class="section-head tight text-center">
-            <h2>Best Selling Coffee</h2>
+            <h2 id="bestsellers-heading">Best Selling Coffee</h2>
             <p class="text-2xl">
               A drink from the ‘My Alowishus’ bottled brews range OR grab one of
               our delicious coffee’s.
@@ -322,11 +325,11 @@
         </div>
       </section>
 
-      <section class="app-promo-section">
+      <section class="app-promo-section" aria-labelledby="app-promo-heading">
         <div class="container">
           <div class="body">
             <div class="section-head">
-              <h2>Instant Coffee At Your Home</h2>
+              <h2 id="app-promo-heading">Instant Coffee At Your Home</h2>
               <p class="text-2xl">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
@@ -349,10 +352,10 @@
         </div>
       </section>
 
-      <section class="customers-section">
+      <section class="customers-section" aria-labelledby="customers-heading">
         <div class="container">
           <div class="body">
-            <h2>What Our Customers Say</h2>
+            <h2 id="customers-heading">What Our Customers Say</h2>
             <div class="rating">
               <span class="score | heading-3" aria-hidden="true">4.9</span>
               <div class="stars">
@@ -657,13 +660,17 @@
         <div class="container">
           <div class="main">
             <div class="left-column">
-              <section class="mission-section">
-                <h2 class="sr-only">Our Mission</h2>
+              <section
+                class="mission-section"
+                aria-labelledby="mission-heading"
+              >
+                <h2 id="mission-heading" class="sr-only">Our Mission</h2>
                 <div class="image">
                   <img
                     src="assets/images/alowishus-black-logo.png"
                     width="280"
                     height="122"
+                    loading="lazy"
                     alt="Alowishus Delicious Bundaberg & Maryborough"
                   />
                 </div>
@@ -674,8 +681,13 @@
                 </p>
               </section>
 
-              <section class="locations-section">
-                <h2 class="heading-3">Store Locations</h2>
+              <section
+                class="locations-section"
+                aria-labelledby="locations-heading"
+              >
+                <h2 id="locations-heading" class="heading-3">
+                  Store Locations
+                </h2>
                 <p>
                   Find your nearest Alowishus store with opening hours, location
                   and contact details.
@@ -690,8 +702,13 @@
             </div>
 
             <div class="right-column">
-              <section class="contact-section">
-                <h2 class="heading-3">Contact Alowishus!</h2>
+              <section
+                class="contact-section"
+                aria-labelledby="contact-heading"
+              >
+                <h2 id="contact-heading" class="heading-3">
+                  Contact Alowishus!
+                </h2>
                 <a class="link" href="mailto:alowishus@gmail.com">
                   <span class="icon-box icon-box-secondary">
                     <svg width="28" height="20" aria-hidden="true">
@@ -760,8 +777,13 @@
                 </ul>
               </section>
 
-              <section class="subscribe-section">
-                <h2 class="heading-3">First One’s On Us!</h2>
+              <section
+                class="subscribe-section"
+                aria-labelledby="subscribe-heading"
+              >
+                <h2 id="subscribe-heading" class="heading-3">
+                  First One’s On Us!
+                </h2>
                 <form>
                   <input
                     class="form-control"

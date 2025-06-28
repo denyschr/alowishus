@@ -9,6 +9,7 @@
   --gray-100: #eeeff1;
   --gray-200: #f3f4f5;
   --yellow: #ffb700;
+  --green: #78ad16;
 
   --font-family-base: "Jost", sans-serif;
   --font-weight-regular: 400;
@@ -33,12 +34,14 @@
 
   --shadow-sm: 0 0.75rem 1.875rem 0 rgba(205, 209, 214, 0.28);
   --shadow-base: 0 1.25rem 3.75rem 0 rgba(163, 168, 178, 0.15);
-  --shadow-lg: 0 1.875rem 3.75rem 0 rgba(163, 168, 178, 0.15);
+  --shadow-md: 0 1.875rem 3.75rem 0 rgba(163, 168, 178, 0.15);
 
   --z-index-header: 1030;
 
   --container-max-width: 77.5rem;
   --container-padding-x: 0.875rem;
+
+  --outline-color: var(--green);
 
   --body-background-color: linear-gradient(
     173deg,
@@ -90,14 +93,14 @@
     var(--white) 0%,
     rgba(var(--white-rgb), 0) 100%
   );
-  --category-card-shadow: 0 1.875rem 3.75rem 0 rgba(163, 168, 178, 0.15);
+  --category-card-shadow: var(--shadow-md);
 
   --bestseller-card-background-color: linear-gradient(
     142deg,
     var(--white) 0%,
     rgba(var(--white-rgb), 0) 100%
   );
-  --bestseller-card-shadow: 0 1.25rem 3.75rem 0 rgba(163, 168, 178, 0.15);
+  --bestseller-card-shadow: var(--shadow-base);
   --bestseller-card-price-text-color: var(--gray-dark);
 
   --customer-card-border-color: rgba(var(--gray-dark-rgb), 0.2);
