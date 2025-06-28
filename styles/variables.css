@@ -28,6 +28,23 @@
   --text-size-6xl: 4rem;
   --text-size-7xl: 7.75rem;
 
+  --fluid-text-6xl-7xl: clamp(var(--text-size-6xl), 8vw, var(--text-size-7xl));
+  --fluid-text-5xl-6xl: clamp(var(--text-size-5xl), 5vw, var(--text-size-6xl));
+  --fluid-text-4xl-5xl: clamp(
+    var(--text-size-4xl),
+    3.5vw,
+    var(--text-size-5xl)
+  );
+  --fluid-text-2xl-3xl: clamp(var(--text-size-2xl), 3vw, var(--text-size-3xl));
+  --fluid-text-xl-2xl: clamp(var(--text-size-xl), 3vw, var(--text-size-2xl));
+  --fluid-text-lg-xl: clamp(var(--text-size-lg), 2.5vw, var(--text-size-xl));
+  --fluid-text-md-lg: clamp(var(--text-size-md), 2vw, var(--text-size-lg));
+  --fluid-text-base-md: clamp(
+    var(--text-size-base),
+    1.5vw,
+    var(--text-size-md)
+  );
+
   --border-radius-base: 1rem;
   --border-radius-md: 1.5rem;
   --border-radius-circle: 100vmax;

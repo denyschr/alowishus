@@ -8,7 +8,7 @@ body {
   min-width: 20rem;
   font-family: var(--font-family-base);
   font-weight: var(--font-weight-regular);
-  font-size: clamp(var(--text-size-md), 2vw, var(--text-size-lg));
+  font-size: var(--fluid-text-md-lg);
   line-height: 1.5;
   color: var(--body-text-color);
   background: var(--body-background-color);

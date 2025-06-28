@@ -1,6 +1,6 @@
 .site-footer {
   p {
-    font-size: clamp(var(--text-size-2xl), 2.5vw, var(--text-size-3xl));
+    font-size: var(--fluid-text-2xl-3xl);
   }
 
   .heading-3 {
@@ -22,7 +22,7 @@
     gap: 1rem;
     padding-block: clamp(1.25rem, 3.5vw, 2.5rem);
     border-block-start: 1px solid var(--divider-color);
-    font-size: clamp(var(--text-size-lg), 2.5vw, var(--text-size-xl));
+    font-size: var(--fluid-text-lg-xl);
     a {
       color: var(--footer-extra-link-color);
       @media (any-hover: hover) {
@@ -89,7 +89,7 @@
     display: inline-flex;
     align-items: center;
     column-gap: clamp(1rem, 2.5vw, 1.5rem);
-    font-size: clamp(var(--text-size-2xl), 2.5vw, var(--text-size-3xl));
+    font-size: var(--fluid-text-2xl-3xl);
     color: var(--contact-section-link-color);
   }
 }

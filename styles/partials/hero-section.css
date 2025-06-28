@@ -16,6 +16,18 @@
       align-items: center;
       flex-wrap: wrap;
       gap: clamp(1rem, 3vw, 1.875rem);
+      .link {
+        font-size: var(--text-size-md);
+        font-weight: var(--font-weight-medium);
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-offset: 0.25rem;
+        @media (any-hover: hover) {
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
     }
   }
 
@@ -57,7 +69,7 @@
     }
 
     p {
-      font-size: clamp(var(--text-size-base), 1.5vw, var(--text-size-md));
+      font-size: var(--fluid-text-base-md);
     }
   }
 }

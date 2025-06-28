@@ -1,4 +1,4 @@
-@media (min-width: 48em) {
+@media (min-width: 24.375em) {
   .bestsellers-list {
     article {
       .info {
@@ -6,7 +6,9 @@
       }
     }
   }
+}
 
+@media (min-width: 48em) {
   .site-footer {
     .left-column {
       max-width: 24.875rem;

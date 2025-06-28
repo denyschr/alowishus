@@ -24,24 +24,24 @@ h5,
 
 h1,
 .heading-1 {
-  font-size: clamp(var(--text-size-6xl), 8vw, var(--text-size-7xl));
+  font-size: var(--fluid-text-6xl-7xl);
 }
 
 h2,
 .heading-2 {
-  font-size: clamp(var(--text-size-5xl), 5vw, var(--text-size-6xl));
+  font-size: var(--fluid-text-5xl-6xl);
 }
 
 h3,
 .heading-3 {
-  font-size: clamp(var(--text-size-3xl), 3.5vw, var(--text-size-5xl));
+  font-size: var(--fluid-text-4xl-5xl);
 }
 
 h5,
 .heading-5 {
-  font-size: clamp(var(--text-size-xl), 3vw, var(--text-size-2xl));
+  font-size: var(--fluid-text-xl-2xl);
 }
 
 .text-2xl {
-  font-size: clamp(var(--text-size-lg), 2.5vw, var(--text-size-2xl));
+  font-size: var(--fluid-text-xl-2xl);
 }
