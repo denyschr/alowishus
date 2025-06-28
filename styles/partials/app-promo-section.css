@@ -12,6 +12,7 @@
     aspect-ratio: 1;
     background: url("../../assets/images/alowishus-coffee-cup-design-3.png")
       center / contain no-repeat;
+    pointer-events: none;
   }
 
   .container {

@@ -55,6 +55,8 @@
 
   --z-index-header: 1030;
 
+  --animation-duration: 0.5s;
+
   --container-max-width: 77.5rem;
   --container-padding-x: 0.875rem;
 

@@ -8,6 +8,7 @@
     position: absolute;
     z-index: -1;
     aspect-ratio: 1;
+    pointer-events: none;
   }
 
   &::before {

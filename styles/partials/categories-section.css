@@ -12,6 +12,7 @@
     aspect-ratio: 1;
     background: url("../../assets/images/alowishus-coffee-cup-design-1.png")
       center / contain no-repeat;
+    pointer-events: none;
   }
 
   .section-head {
@@ -33,13 +34,6 @@
     border-radius: var(--border-radius-md);
     background: var(--category-card-background-color);
     box-shadow: var(--category-card-shadow);
-    transition: translate 0.2s ease-in-out;
-    @media (any-hover: hover) {
-      &:hover {
-        translate: 0 -0.625rem;
-      }
-    }
-
     > :first-child {
       flex-grow: 1;
     }

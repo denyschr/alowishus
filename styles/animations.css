@@ -1,0 +1,31 @@
+.animate-opacity {
+  opacity: 0;
+  transition: opacity var(--animation-duration) ease-in-out;
+  &.animate {
+    opacity: 1;
+  }
+}
+
+.animate-bottom,
+.animate-left,
+.animate-right {
+  transition: translate var(--animation-duration) ease-in-out,
+    opacity var(--animation-duration) ease-in-out;
+  opacity: 0;
+  &.animate {
+    opacity: 1;
+    translate: 0;
+  }
+}
+
+.animate-bottom {
+  translate: 0 1.875rem;
+}
+
+.animate-left {
+  translate: -1.875rem 0;
+}
+
+.animate-right {
+  translate: 1.875rem 0;
+}
