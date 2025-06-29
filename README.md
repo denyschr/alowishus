@@ -18,3 +18,7 @@ Alowishus Delicious is a simple, responsive and accessible coffee shop landing p
 ## Demo
 
 GitHub Pages link: https://denyschr.github.io/alowishus/
+
+## License
+
+This project is licensed under the [MIT](LICENSE) license
