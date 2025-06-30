@@ -1,11 +1,11 @@
-import { debounce } from "./utils.js";
+import { debounce, throttle } from "./utils.js";
 
 const initHeader = () => {
   const root = document.documentElement;
-  const container = document.querySelector("[data-header]");
+  const header = document.querySelector("[data-header]");
   const toggleMenuButton = document.querySelector("[data-toggle-menu-button]");
 
-  const onToggle = () => {
+  const toggleMenu = () => {
     root.classList.toggle("prevent-scroll");
     root.classList.contains("menu-open")
       ? toggleMenuButton.setAttribute("aria-expanded", "false")
@@ -13,28 +13,24 @@ const initHeader = () => {
     root.classList.toggle("menu-open");
   };
 
-  const onScroll = () => {
+  const closeMenu = debounce(() => {
+    if (window.innerWidth >= 992) {
+      root.classList.remove("prevent-scroll");
+      root.classList.remove("menu-open");
+      toggleMenuButton.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  const updateHeaderStyle = throttle(() => {
     window.scrollY > 0
-      ? container.classList.add("scroll")
-      : container.classList.remove("scroll");
-  };
+      ? header.classList.add("scroll")
+      : header.classList.remove("scroll");
+  });
 
-  onScroll();
-
-  toggleMenuButton.addEventListener("click", onToggle);
-
-  window.addEventListener("scroll", onScroll);
-
-  window.addEventListener(
-    "resize",
-    debounce(() => {
-      if (window.innerWidth >= 992) {
-        root.classList.remove("prevent-scroll");
-        root.classList.remove("menu-open");
-        toggleMenuButton.setAttribute("aria-expanded", "false");
-      }
-    })
-  );
+  updateHeaderStyle();
+  toggleMenuButton.addEventListener("click", toggleMenu);
+  window.addEventListener("scroll", updateHeaderStyle);
+  window.addEventListener("resize", closeMenu);
 };
 
 export default initHeader;

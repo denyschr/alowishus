@@ -69,6 +69,7 @@
 
     <main>
       <section
+        id="top"
         class="hero-section animate-opacity"
         aria-labelledby="hero-heading"
         data-animate
@@ -825,6 +826,7 @@
                   class="form-control"
                   name="email"
                   type="email"
+                  autocomplete="email"
                   placeholder="E-mail"
                   required
                 />
@@ -855,5 +857,16 @@
         </div>
       </div>
     </footer>
+
+    <a
+      class="go-to-top-button"
+      href="#top"
+      aria-label="Go to top"
+      data-go-to-top-button
+    >
+      <svg width="18" height="18" aria-hidden="true">
+        <use href="assets/icons/icons.svg#arrow-up"></use>
+      </svg>
+    </a>
   </body>
 </html>

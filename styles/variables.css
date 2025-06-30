@@ -81,6 +81,10 @@
   --button-primary-background-color: var(--gray-dark);
   --button-primary-background-color-hover: rgba(var(--gray-dark-rgb), 0.9);
 
+  --go-to-top-button-text-color: var(--white);
+  --go-to-top-button-background-color: rgba(var(--gray-dark-rgb), 0.6);
+  --go-to-top-button-background-color-hover: rgba(var(--gray-dark-rgb), 1);
+
   --link-color: var(--gray-dark);
 
   --divider-color: rgba(var(--gray-dark-rgb), 0.1);

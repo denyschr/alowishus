@@ -76,6 +76,7 @@
 .customer {
   height: 100%;
   overflow: hidden;
+  user-select: none;
   border-radius: var(--border-radius-base);
   background: var(--customer-card-background-color);
   border: 1px solid var(--customer-card-border-color);
