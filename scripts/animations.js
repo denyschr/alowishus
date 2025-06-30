@@ -1,4 +1,12 @@
-const animateOnScroll = () => {
+const initAnimations = () => {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    return void document
+      .querySelectorAll("[data-animate]")
+      .forEach((element) => {
+        element.classList.add("animate");
+      });
+  }
+
   const observer = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
@@ -17,4 +25,4 @@ const animateOnScroll = () => {
     .forEach((element) => observer.observe(element));
 };
 
-export default animateOnScroll;
+export default initAnimations;
